@@ -4,3 +4,7 @@
 .LSOverride
 ._*
 
+# Build
+node_modules
+build
+
