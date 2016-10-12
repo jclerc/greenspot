@@ -8,6 +8,7 @@ Version 0.1
 git clone https://github.com/JClerc/GreenSpot.git
 cd GreenSpot
 git checkout develop
+npm install
 npm run gulp
 ```
 
