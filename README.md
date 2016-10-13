@@ -4,5 +4,5 @@ Version 0.1
 
 # Contributing
 
-Please see [CONTRIBUTING.md](CONTRIBUTING.md).
+Please see [CONTRIBUTING](CONTRIBUTING.md).
 
