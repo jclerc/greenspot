@@ -23,7 +23,7 @@ npm run gulp
 
 ### General
 
-Indention is made with 4 spaces.
+Indentation is made with 4 spaces.
 
 ### CSS
 
@@ -31,5 +31,5 @@ We are using [SCSS](http://sass-lang.com/) for making our styles, and [BEM](http
 
 ### JavaScript
 
-ES6 is used (and converted to ES5 using Babel) is our project. We use the general coding conventions, as defined [here](http://www.w3schools.com/js/js_conventions.asp).
+ES6 is used (and converted to ES5 using Babel) in our project. We use the general coding conventions, as defined [here](http://www.w3schools.com/js/js_conventions.asp).
 
