@@ -1,12 +1,12 @@
-/* Main stylesheet */
 
-body {
-    background: #F0F0F0;
-}
+@import 'settings/reset';
+@import 'settings/colors';
+@import 'settings/fonts';
+@import 'settings/mediaqueries';
+@import 'settings/mixins';
+@import 'settings/reset';
 
-header {
-    h1 {
-        color: blue;
-    }
-}
+@import 'components/button';
+
+@import 'partials/navigation';
 
