@@ -33,3 +33,13 @@ We are using [SCSS](http://sass-lang.com/) for making our styles, and [BEM](http
 
 ES6 is used (and converted to ES5 using Babel) in our project. We use the general coding conventions, as defined [here](http://www.w3schools.com/js/js_conventions.asp).
 
+# Merging branches
+
+Branches have to be merged in squash mode, with version as commit message.
+
+```sh
+git checkout master
+git merge --squash develop
+git commit -m "Version X.X.X"
+```
+
