@@ -35,14 +35,12 @@ ES6 is used (and converted to ES5 using Babel) in our project. We use the genera
 
 # Merging branches
 
-Branches have to be merged in squash mode, with version as commit message.
+Always merge branches after updating README.md with correct version number, with commit message in following format: "Version X.X.X".
 
 ```sh
 # Move to master
 git checkout master
-# Merge without history, and discard changes in master
-git merge develop --squash -X theirs
-# Commit with version number
-git commit -m "Version X.X.X"
+# Merge and discard changes in master
+git merge develop -X theirs 
 ```
 
