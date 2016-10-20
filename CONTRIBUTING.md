@@ -38,8 +38,11 @@ ES6 is used (and converted to ES5 using Babel) in our project. We use the genera
 Branches have to be merged in squash mode, with version as commit message.
 
 ```sh
+# Move to master
 git checkout master
-git merge --squash develop
+# Merge without history, and discard changes in master
+git merge develop --squash -X theirs
+# Commit with version number
 git commit -m "Version X.X.X"
 ```
 
