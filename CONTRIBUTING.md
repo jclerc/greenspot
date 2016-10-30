@@ -1,5 +1,5 @@
 # Installation
-          
+
 ```sh
 git clone https://github.com/JClerc/GreenSpot.git
 cd GreenSpot
@@ -21,9 +21,8 @@ npm run gulp
 
 # Guidelines
 
-### General
-
-Indentation is made with 4 spaces.
+- Indentation is made with 2 spaces.
+- Commit messages should be "[<scope>:<language>] <message>", e.g.: "[menu:css] Fix navigation menu"
 
 ### CSS
 
