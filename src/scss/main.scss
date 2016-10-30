@@ -5,7 +5,4 @@
 @import 'settings/mediaqueries';
 @import 'settings/mixins';
 
-@import 'components/button';
-@import 'components/navbar';
-
-@import 'partials/menu';
+@import 'components/*.scss';
