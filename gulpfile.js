@@ -2,6 +2,7 @@
 var gulp         = require('gulp');
 var uglify       = require('gulp-uglify');
 var sass         = require('gulp-sass');
+var sassGlob     = require('gulp-sass-glob');
 var browserSync  = require('browser-sync').create();
 var imagemin     = require('gulp-imagemin');
 var autoprefixer = require('gulp-autoprefixer');
@@ -43,6 +44,7 @@ gulp.task('style', () => {
   .pipe(plumber())
   .pipe(sourcemaps.init())
 
+  .pipe(sassGlob())
   .pipe(sass({ outputStyle: 'compressed' }))
   .pipe(autoprefixer('last 2 versions'))
 
