@@ -1,12 +1,11 @@
 
-@import 'settings/reset';
+@import 'settings/normalize';
 @import 'settings/colors';
 @import 'settings/fonts';
 @import 'settings/mediaqueries';
 @import 'settings/mixins';
-@import 'settings/reset';
 
 @import 'components/button';
+@import 'components/navbar';
 
-@import 'partials/navigation';
-
+@import 'partials/menu';
