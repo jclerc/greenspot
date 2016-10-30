@@ -58,6 +58,12 @@ gulp.task('image', () => {
   .pipe(gulp.dest('dist/img/'));
 });
 
+// Media files
+gulp.task('media', () => {
+  gulp.src('src/media/**/*')
+  .pipe(gulp.dest('dist/media/'));
+});
+
 // Fonts
 gulp.task('fonts', () => {
   gulp.src('src/fonts/*')
@@ -71,6 +77,7 @@ gulp.task('watch', () => {
   browserSync.init({ server: 'dist/' });
   gulp.watch('src/*.html', ['html']);
   gulp.watch('src/img/**/*', ['image']);
+  gulp.watch('src/media/**/*', ['media']);
   gulp.watch('src/js/**/*.js', ['script']);
   gulp.watch('src/fonts/**/*', ['fonts']);
   gulp.watch('src/scss/**/*.scss', ['style']);
@@ -78,5 +85,5 @@ gulp.task('watch', () => {
 });
 
 // Trigger build & watch
-gulp.task('default', ['script', 'fonts', 'style', 'image', 'html', 'watch']);
+gulp.task('default', ['script', 'fonts', 'style', 'image', 'media', 'html', 'watch']);
 
