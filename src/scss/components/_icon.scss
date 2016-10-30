@@ -1,0 +1,22 @@
+
+.icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-size: 100%;
+
+  &.icon_responsive {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+  }
+
+  &.icon_info {
+    background-image: url('/img/icons/info.png');
+  }
+
+  &.icon_back {
+    background-image: url('/img/icons/back.png');
+  }
+
+}

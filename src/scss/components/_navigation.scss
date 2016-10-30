@@ -1,0 +1,42 @@
+
+.navigation {
+
+  height: 60px;
+  border-bottom: 1px solid #EEE;
+  text-align: center;
+  background: #FCFCFC;
+
+  .navigation__item {
+    height: 100%;
+  }
+
+  .navigation__item_icon {
+    width: 60px;
+    line-height: 60px;
+    vertical-align: middle;
+    padding: 18px;
+  }
+
+  .navigation__item_left {
+    float: left;
+  }
+
+  .navigation__item_middle {
+    width: calc(100% - 120px);
+    display: inline-block;
+  }
+
+  .navigation__item_right {
+    float: right;
+  }
+
+  .navigation__link {
+    display: inline-block;
+  }
+
+  .navigation__logo {
+    height: 100%;
+    width: auto;
+  }
+
+}
