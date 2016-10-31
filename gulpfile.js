@@ -23,8 +23,8 @@ gulp.task('html', () => {
 gulp.task('script', () => {
   gulp.src([
     'src/js/libs/*.js',
-    'src/js/app/*.js',
     'src/js/main.js',
+    'src/js/app/*.js',
   ])
   .pipe(plumber())
   .pipe(sourcemaps.init())
