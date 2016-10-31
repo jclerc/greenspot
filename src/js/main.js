@@ -1,6 +1,11 @@
 
-(() => {
+var App = (() => {
   'use strict';
-  console.log($ === Zepto ? 'It works !' : 'Error :(');
-})();
 
+  var App = {};
+
+  App.router = new Grapnel();
+
+  return App;
+
+})();
