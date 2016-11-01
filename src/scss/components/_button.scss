@@ -1,0 +1,27 @@
+
+.button {
+
+  width: 150pt;
+  height: 30pt;
+  background-color: $primary-color;
+  border-radius: 3px;
+  margin: auto;
+
+  .button_icon {
+
+    width:12pt;
+    line-height: 60px;
+    vertical-align: middle;
+    margin: 9px 20px;
+  }
+
+  .button_text {
+
+    color: $background-color;
+    text-transform: uppercase;
+    font-size: 13pt;
+    margin: 10px;
+    line-height: 22px;
+    vertical-align: middle;
+  }
+}

@@ -1,0 +1,26 @@
+
+.page_menu_title{
+
+  color: $primary-color;
+  font-size: 36pt;
+  font-weight: 400;
+  text-align:center;
+  margin: 5px 0;
+}
+
+.page_menu_subtitle{
+  
+  color: $subtitle-color;
+  opacity: .65;
+  font-size: 8pt;
+  font-weight: 400;
+  text-align:center;
+  margin: 0;
+
+  .page_menu_subtitle_highlight{
+
+  color: $primary-color;
+
+}
+
+}
