@@ -9,7 +9,7 @@
 }
 
 .page_menu_subtitle{
-  
+
   color: $subtitle-color;
   opacity: .65;
   font-size: 8pt;
@@ -22,5 +22,33 @@
   color: $primary-color;
 
 }
+
+}
+
+.heading_lg {
+
+  margin: 50px;
+  color: $text-color;
+
+  .heading__first {
+
+    opacity: 0.7;
+    padding-left: 20px;
+
+  }
+
+  .heading__highlight {
+
+    color: $primary-color;
+    padding-left: 108px;
+
+  }
+
+  .heading__last {
+
+    padding-left: 60px;
+    opacity: 0.7;
+
+  }
 
 }
