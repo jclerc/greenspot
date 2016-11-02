@@ -6,11 +6,14 @@
 @import 'settings/mediaqueries';
 @import 'settings/mixins';
 
+@import 'page/layout';
+
 @import 'components/button';
 @import 'components/carousel';
 @import 'components/icon';
 @import 'components/navigation';
+@import 'components/menu';
 @import 'components/page';
-@import 'components/pages';
+@import 'components/content';
 @import 'components/title';
 @import 'components/video';
