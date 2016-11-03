@@ -8,19 +8,23 @@
   text-decoration: none;
 
   &.button_area {
+
     margin: 20px auto;
   }
 
   &.button_responsive {
+
     width: 100%;
     display: flex;
   }
 
   &.button_area.button_responsive {
+
     width: calc(100% - 80px);
   }
 
   .button__icon {
+
     float: left;
     position: absolute;
     width: 16px;
@@ -35,6 +39,6 @@
     text-transform: uppercase;
     font-size: 18px;
     margin: auto;
-
+    font-weight: bold;
   }
 }
