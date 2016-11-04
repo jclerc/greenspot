@@ -8,8 +8,8 @@
   });
 
   App.router.get('/home', function (req) {
-      $('.page').hide();
-      $('.page_home').show();
+    $('.page').hide();
+    $('.page_home').show();
   });
 
 })();
