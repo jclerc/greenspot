@@ -1,26 +1,21 @@
 
 .carousel {
-
   position: absolute;
   width: 100%;
   height: 100%;
   padding: 0 70px;
   overflow: hidden;
-
 }
 
 .carousel__slides {
-
   width: 100%;
   height: 100%;
   white-space: nowrap;
-  font-size: 0px;
+  font-size: 0;
   transition: all 0.3s;
-
 }
 
 .carousel__item {
-
   background-color: green;
   display: inline-block;
   width: 100%;
@@ -28,18 +23,13 @@
   transform: scale(0.9);
   transition: all 0.3s;
   position: relative;
-
 }
 
 .carousel__item_active {
-
   transform: scale(1.1);
   z-index: 10;
-
 }
 
 .carousel__item:nth-child(2n) {
-
   background-color: yellow;
-
 }

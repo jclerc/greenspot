@@ -1,21 +1,11 @@
 
 .menu {
-
   display: flex;
   flex-direction: column;
   height: 100%;
+}
 
-  .menu__top {
-
-  }
-
-  .menu__items {
-    flex-grow: 1;
-    position: relative;
-  }
-
-  .menu__bottom {
-
-  }
-
+.menu__items {
+  flex-grow: 1;
+  position: relative;
 }
