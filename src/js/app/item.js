@@ -1,5 +1,5 @@
 
-(() => {
+App.ready($ => {
   'use strict';
 
   App.router.get('/item-:id', function (req) {
@@ -10,4 +10,4 @@
     $('.page_item-' + id).show();
   });
 
-})();
+});

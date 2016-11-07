@@ -1,5 +1,5 @@
 
-(() => {
+App.ready($ => {
   'use strict';
 
   $('[data-goto="home"]').on('click', e => {
@@ -12,4 +12,4 @@
     $('.page_home').show();
   });
 
-})();
+});
