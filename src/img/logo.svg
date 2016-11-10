@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 600 700" enable-background="new 0 0 600 700" xml:space="preserve">
+<g>
+	<g>
+		<defs>
+			<circle id="SVGID_1_" cx="435.381" cy="256.057" r="83.066"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+		</clipPath>
+		<g clip-path="url(#SVGID_2_)">
+			<defs>
+				<rect id="SVGID_3_" x="-9.483" y="148.994" width="590.691" height="945.105"/>
+			</defs>
+			<clipPath id="SVGID_4_">
+				<use xlink:href="#SVGID_3_"  overflow="visible"/>
+			</clipPath>
+			<rect x="343.085" y="163.762" clip-path="url(#SVGID_4_)" fill="#81D135" width="184.591" height="184.591"/>
+		</g>
+	</g>
+	<g>
+		<defs>
+			<circle id="SVGID_5_" cx="394.771" cy="256.057" r="83.066"/>
+		</defs>
+		<clipPath id="SVGID_6_">
+			<use xlink:href="#SVGID_5_"  overflow="visible"/>
+		</clipPath>
+		<g clip-path="url(#SVGID_6_)">
+			<defs>
+				<rect id="SVGID_7_" x="-9.483" y="148.994" width="590.691" height="945.105"/>
+			</defs>
+			<clipPath id="SVGID_8_">
+				<use xlink:href="#SVGID_7_"  overflow="visible"/>
+			</clipPath>
+			<rect x="302.475" y="163.762" opacity="0.2538" clip-path="url(#SVGID_8_)" fill="#81D135" width="184.591" height="184.591"/>
+		</g>
+	</g>
+	<text transform="matrix(1 0 0 1 96.1474 276.0887)"><tspan x="0" y="0" fill="#5C5C5C" font-family="'HelveticaNeueLTStd-ThEx'" font-size="53.5313px" letter-spacing="11">GREE</tspan><tspan x="195.763" y="0" fill="#5C5C5C" font-family="'HelveticaNeueLTStd-ThEx'" font-size="53.5313px">N</tspan></text>
+	<text transform="matrix(1 0 0 1 370.1227 274.971)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'HelveticaNeueLTStd-BdCn'" font-size="53.5313px" letter-spacing="7">SP</tspan><tspan x="70.232" y="0" fill="#FFFFFF" font-family="'HelveticaNeueLTStd-BdCn'" font-size="53.5313px" letter-spacing="6">O</tspan><tspan x="106.045" y="0" fill="#FFFFFF" font-family="'HelveticaNeueLTStd-BdCn'" font-size="53.5313px">T</tspan></text>
+</g>
+</svg>
