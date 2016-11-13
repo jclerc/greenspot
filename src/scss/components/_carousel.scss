@@ -16,20 +16,34 @@
 }
 
 .carousel__item {
-  background-color: green;
   display: inline-block;
   width: 100%;
   height: 100%;
-  transform: scale(0.9);
+  transform: scale(0.8);
   transition: all 0.3s;
   position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carousel__item_1 {
+  background-image: url(../img/cookie.svg);   
+}
+
+.carousel__item_2 {
+  background-image: url(../img/jean.svg);   
+}
+
+.carousel__item_3 {
+  background-image: url(../img/smartphone.svg);   
+}
+
+.carousel__item_4 {
+  background-image: url(../img/icons/locked-padlock-grey.svg);
 }
 
 .carousel__item_active {
-  transform: scale(1.1);
+  transform: scale(1);
   z-index: 10;
-}
-
-.carousel__item:nth-child(2n) {
-  background-color: yellow;
 }
