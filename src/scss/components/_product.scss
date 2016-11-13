@@ -1,0 +1,65 @@
+
+.product__content {
+  padding: 0 28px;
+  font-weight: lighter;
+  font-size: 22px;
+  overflow-y: scroll;
+  position: relative;
+  height: 100%;
+}
+
+.product__image {
+	background-image: url(../img/cookie.svg);
+	background-repeat: no-repeat;
+  height: 180px;
+  width: 180px;
+	margin: auto;
+}
+
+.product__subtitle {
+  display: flex;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.product__subtitle_highlight {
+  color: $primary-color;
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.product__subtitle_classic {
+  color: $subtitle-color;
+  margin: 0;
+  line-height: 20px;
+  padding-top: 4px; 
+  text-align: left;
+}
+
+.product__textscroller{
+  position: fixed;
+  bottom: 10;
+  width: 100%;
+  height: 40px;
+  background: -webkit-linear-gradient(rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+  background: -o-linear-gradient(rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+}
+
+.navigation__bar {
+  background-color: $icon-color;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10px;
+}
+
+.navigation__bar_progress {
+  background-color: $primary-color;
+  float: left;
+  width: 20%;
+  height: 10px;
+}
+
+
+
