@@ -5,10 +5,13 @@ App.ready($ => {
   App.router.get('/item-:id/:step?', function (req) {
     var id = req.params.id;
     var step = req.params.step || 'step-1';
+
     if (step.toLowerCase().indexOf('step') === 0) {
       step = step.substr(5);
     }
+
     App.showPage('item-' + id, step);
+    App.backAction('/menu');
   });
 
   App.router.on('navigate', function () {

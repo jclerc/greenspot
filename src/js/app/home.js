@@ -7,6 +7,9 @@ App.ready($ => {
     e.preventDefault();
   });
 
-  App.router.get('/home', req => App.showPage('home'));
+  App.router.get('/home', req => {
+    App.showPage('home');
+    App.backAction(null);
+  });
 
 });
