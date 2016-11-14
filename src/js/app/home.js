@@ -7,9 +7,6 @@ App.ready($ => {
     e.preventDefault();
   });
 
-  App.router.get('/home', function (req) {
-    $('.page').hide();
-    $('.page_home').show();
-  });
+  App.router.get('/home', req => App.showPage('home'));
 
 });

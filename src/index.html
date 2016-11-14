@@ -14,7 +14,7 @@
           <div class="icon icon_responsive icon_back"></div>
         </div>
         <div class="navigation__item navigation__item_middle" data-goto="home">
-          <a href="/" class="navigation__link">
+          <a href="#" data-goto="home" class="navigation__link">
             <img src="/img/logo.png" alt="GreenSpot" class="navigation__logo">
           </a>
         </div>
@@ -47,7 +47,7 @@
         </div>
 
       </div>
-      <div class="page page_menu" style="display: none;">
+      <div class="page page_menu page_hidden">
         <div class="menu">
           <div class="menu__top">
             <h2 class="title">Hello !</h2>
@@ -74,28 +74,39 @@
           </div>
         </div>
       </div>
-      <div class="page page_item page_item-1" style="display: none;">
-        <div class="product">
-          <h1 class="title__product">Les Cookies</h1>
-          <div class="product__image"></div>
-          <div class="product__subtitle">
-            <span class="product__subtitle_highlight">92.980</span>
-            <p class="product__subtitle_classic">
-            cookies vendus <br> par jour
-            </p>
+      <div class="page page_item page_item-1 page_hidden">
+        <div class="step step-1 step_hidden">
+          <div class="product">
+            <h1 class="title__product">Les Cookies</h1>
+            <div class="product__image"></div>
+            <div class="product__subtitle">
+              <span class="product__subtitle_highlight">92.980</span>
+              <p class="product__subtitle_classic">
+              cookies vendus <br> par jour
+              </p>
+            </div>
+            <p class="product__text">Les cookies sont consommés de manière intensive par les petits enfants. Hors ils renferment des produits plutôt dangereux pour la santé, mais surtout pour l’environnement.</p>
+            <p class="product__text">Les cookies sont consommés de manière intensive par les petits enfants. Hors ils renferment des produits plutôt dangereux pour la santé, mais surtout pour l’environnement.</p>
+            <p class="product__text">Les cookies sont consommés de manière intensive par les petits enfants. Hors ils renferment des produits plutôt dangereux pour la santé, mais surtout pour l’environnement.</p>
+            <p data-goto="item-1/step-2">PASSER AU SUIVANT</p>
           </div>
-          <p class="product__text">Les cookies sont consommés de manière intensive par les petits enfants. Hors ils renferment des produits plutôt dangereux pour la santé, mais surtout pour l’environnement.</p>
-          <p class="product__text">Les cookies sont consommés de manière intensive par les petits enfants. Hors ils renferment des produits plutôt dangereux pour la santé, mais surtout pour l’environnement.</p>
+        </div>
+        <div class="step step-2 step_hidden">
+          Step 2
+            <p data-goto="item-1/step-3">PASSER AU SUIVANT</p>
+        </div>
+        <div class="step step-3 step_hidden">
+          Step 3
         </div>
       </div>
       <div class="navigation-bar navigation-bar_hidden">
         <div class="navigation-bar__overlay"></div>
         <div class="navigation-bar__progress"></div>
       </div>
-      <div class="page page_item page_item-2" style="display: none;">
+      <div class="page page_item page_item-2 page_hidden">
         <h1>Second Item</h1>
       </div>
-      <div class="page page_item page_item-3" style="display: none;">
+      <div class="page page_item page_item-3 page_hidden">
         <h1>Third Item</h1>
       </div>
     </section>

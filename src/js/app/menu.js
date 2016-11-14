@@ -14,9 +14,6 @@ App.ready($ => {
     e.preventDefault();
   });
 
-  App.router.get('/menu', function (req) {
-    $('.page').hide();
-    $('.page_menu').show();
-  });
+  App.router.get('/menu', req => App.showPage('menu'));
 
 });
