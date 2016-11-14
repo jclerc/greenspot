@@ -1,4 +1,5 @@
 
+// Settings
 @import 'settings/normalize';
 @import 'settings/reset';
 @import 'settings/colors';
@@ -6,8 +7,10 @@
 @import 'settings/mediaqueries';
 @import 'settings/mixins';
 
+// Page
 @import 'page/layout';
 
+// Components
 @import 'components/button';
 @import 'components/carousel';
 @import 'components/icon';
@@ -18,3 +21,4 @@
 @import 'components/title';
 @import 'components/video';
 @import 'components/product';
+@import 'components/navigation-bar';
