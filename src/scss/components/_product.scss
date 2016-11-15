@@ -35,3 +35,43 @@
   padding-top: 4px;
   text-align: left;
 }
+
+.product__image-2 {
+  background-image: url(../img/smartphone.svg);
+  width: 97px;
+}
+
+.message {
+  font-size: 12px;
+  overflow: scroll;
+  width: 100%;
+}
+
+.message__bubble {
+  border-radius: 13px;
+  background-color: $background-color;
+  padding: 0 14px;
+  margin: 5px;
+  max-width: 80%;
+
+  &::after {
+    clear: both;
+  }
+}
+
+.message__bubble_computer {
+  float: left;
+}
+
+.message__bubble_user {
+  background-color: $message-color;
+  color: #ffffff;
+  float: right;
+  text-align: right;
+}
+
+.chat {
+  margin-top: 20px;
+  background: $screen-color;
+  padding: 5px 0;
+}
