@@ -51,7 +51,7 @@
   border-radius: 13px;
   background-color: $background-color;
   padding: 0 14px;
-  margin: 5px;
+  margin: 5px 0;
   max-width: 80%;
 
   &::after {
@@ -67,11 +67,41 @@
   background-color: $message-color;
   color: #ffffff;
   float: right;
-  text-align: right;
 }
 
 .chat {
   margin-top: 20px;
   background: $screen-color;
-  padding: 5px 0;
+  padding: 5px;
+}
+
+.message__bottom {
+  background-color: $background-color;
+  padding: 10px 5px;
+}
+
+.message__answer {
+  border: 1px solid $icon-color;
+  border-radius: 20px;
+  font-size: 12px;
+  padding: 10px 2px;
+  padding-left: 20px;
+  width: 74%;
+}
+
+.message__button {
+  background-color: $message-color;
+  display: inline-block;
+  width: 25%;
+  height: auto;
+  border-radius: 20px;
+  float: right;
+}
+
+.message__button__text {
+  margin: 0;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  padding: 10px 2px;
 }
