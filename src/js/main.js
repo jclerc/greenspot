@@ -39,10 +39,10 @@ var App = ($ => {
   $(function () {
     // Ensure deffered is run when all JS is read
     setTimeout(() => {
-      for (var i = deffered.length - 1; i >= 0; i--) {
-        if (typeof deffered[i] === 'function') {
-          deffered[i]($);
-        }
+      var callback = deffered.shift();
+      while (callback) {
+        callback($);
+        callback = deffered.shift();
       }
     });
   });

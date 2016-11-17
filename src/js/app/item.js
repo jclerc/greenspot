@@ -2,6 +2,20 @@
 App.ready($ => {
   'use strict';
 
+  var listener = function () {
+    if (this.path().toLowerCase().indexOf('/item') === -1) {
+      $('.navigation-bar').addClass('navigation-bar_hidden');
+    } else {
+      $('.navigation-bar').removeClass('navigation-bar_hidden');
+    }
+  };
+
+  // Attach it
+  App.router.on('navigate', listener);
+
+  // And run it now
+  listener.bind(App.router)();
+
   App.router.get('/item-:id/:step?', function (req) {
     var id = req.params.id;
     var step = req.params.step || 'step-1';
@@ -12,14 +26,6 @@ App.ready($ => {
 
     App.showPage('item-' + id, step);
     App.backAction('/menu');
-  });
-
-  App.router.on('navigate', function () {
-    if (this.path().toLowerCase().indexOf('/item') === -1) {
-      $('.navigation-bar').addClass('navigation-bar_hidden');
-    } else {
-      $('.navigation-bar').removeClass('navigation-bar_hidden');
-    }
   });
 
   $('[data-goto^="item-"]').on('click', function (e) {
