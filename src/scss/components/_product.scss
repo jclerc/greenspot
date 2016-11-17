@@ -41,6 +41,13 @@
   text-align: left;
 }
 
+.product__subtitle_special {
+  color: $primary-color;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
 .product__image-2 {
   background-image: url(../img/smartphone.svg);
   width: 97px;
