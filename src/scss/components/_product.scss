@@ -21,10 +21,44 @@
   width: 250px;
 }
 
+.product__image-anim {
+  background-image: url(../img/smartphone-1.svg);
+  width: 100%;
+  position: absolute;
+}
+
+.product__image-3 {
+  background-image: url(../img/smartphone_back.svg);
+  transform: translateZ(-100px);
+}
+
+.product__image-2 {
+  background-image: url(../img/smartphone_circuit.svg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  transform: translateZ(-25px);
+}
+
+.product__image-1 {
+  transform: translateZ(50px);
+}
+
 .product__subtitle {
   display: flex;
   padding-top: 15px;
   text-align: center;
+}
+
+.animation__item-2 {
+  height: 180px;
+  width: 97px;
+  position: relative;
+  margin: 30px auto;
+
+  transform-style: preserve-3d;
+  transform: rotate3d(0.6, -1, 0, 40deg);
+  perspective: 1000px;
 }
 
 .product__subtitle_highlight {
@@ -46,11 +80,6 @@
   font-size: 15px;
   text-transform: uppercase;
   padding-bottom: 10px;
-}
-
-.product__image-2 {
-  background-image: url(../img/smartphone.svg);
-  width: 97px;
 }
 
 .message {
