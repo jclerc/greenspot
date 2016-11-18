@@ -30,7 +30,18 @@
 
 .product__image-3 {
   background-image: url(../img/smartphone_back.svg);
+}
+
+.animation__item-2_view3d .product__image-3 {
   transform: translateZ(-100px);
+}
+
+.animation__item-2_view3d .product__image-2 {
+  transform: translateZ(-25px);
+}
+
+.animation__item-2_view3d .product__image-1 {
+  transform: translateZ(50px);
 }
 
 .product__image-2 {
@@ -38,11 +49,6 @@
   background-size: cover;
   background-position: center;
   border-radius: 20px;
-  transform: translateZ(-25px);
-}
-
-.product__image-1 {
-  transform: translateZ(50px);
 }
 
 .product__subtitle {
@@ -56,7 +62,9 @@
   width: 97px;
   position: relative;
   margin: 30px auto;
+}
 
+.animation__item-2_view3d {
   transform-style: preserve-3d;
   transform: rotate3d(0.6, -1, 0, 40deg);
   perspective: 1000px;
