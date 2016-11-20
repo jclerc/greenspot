@@ -30,21 +30,14 @@ git commit -m "Version X.X.X"
 
 **2. Merge branches**
 
-Ignore changes in master, since develop has latest changes.
-
-```sh
-# Move to master
-git checkout master
-# Merge and discard changes in master
-git merge develop -X theirs
-```
+Merging is done using a pull request right after updating version.
 
 **3. Create tag**
 
 Each version must have his own tag.
 
 ```sh
-# Still on branch master
+# Move to master
 git checkout master
 # Create tag
 git tag vX.X.X
