@@ -5,10 +5,11 @@
   font-weight: 400;
   text-align: center;
   margin: 5px 0;
+  text-transform: uppercase;
 }
 
 .title_sm {
-  color: $subtitle-color;
+  color: $background-color;
   font-size: 18px;
 }
 
@@ -26,7 +27,7 @@
 
 .heading_lg {
   width: 100%;
-  color: $subtitle-color;
+  color: $background-color;
   text-transform: uppercase;
   text-align: center;
 }
@@ -37,4 +38,10 @@
 
 .heading__highlight {
   color: $primary-color;
+}
+
+.title__product {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20px;
 }

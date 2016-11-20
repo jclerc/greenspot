@@ -19,6 +19,10 @@
   padding: 18px;
 }
 
+.navigation__item_hidden {
+  visibility: hidden;
+}
+
 .navigation__item_left {
   float: left;
 }

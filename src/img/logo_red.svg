@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 600 700" style="enable-background:new 0 0 600 700;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);}
+	.st1{opacity:0.2538;clip-path:url(#SVGID_4_);fill:#FFAEAE;}
+	.st2{clip-path:url(#SVGID_6_);}
+	.st3{clip-path:url(#SVGID_8_);fill:#E03838;}
+	.st4{fill:#5C5C5C;}
+	.st5{font-family:'HelveticaNeueLTStd-ThEx';}
+	.st6{font-size:53.5313px;}
+	.st7{letter-spacing:11;}
+	.st8{fill:#FFFFFF;}
+	.st9{font-family:'HelveticaNeueLTStd-BdCn';}
+	.st10{letter-spacing:7;}
+	.st11{letter-spacing:6;}
+</style>
+<g>
+	<g>
+		<defs>
+			<circle id="SVGID_1_" cx="394.8" cy="256.1" r="83.1"/>
+		</defs>
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;fill-rule:evenodd;clip-rule:evenodd;fill:#FFAEAE;"/>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<g class="st0">
+			<defs>
+				<rect id="SVGID_3_" x="-9.5" y="149" width="590.7" height="945.1"/>
+			</defs>
+			<use xlink:href="#SVGID_3_"  style="overflow:visible;fill:#FFAEAE;"/>
+			<clipPath id="SVGID_4_">
+				<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+			</clipPath>
+			<rect x="302.5" y="163.8" class="st1" width="184.6" height="184.6"/>
+		</g>
+	</g>
+	<g>
+		<defs>
+			<circle id="SVGID_5_" cx="435.4" cy="256.1" r="83.1"/>
+		</defs>
+		<use xlink:href="#SVGID_5_"  style="overflow:visible;fill-rule:evenodd;clip-rule:evenodd;fill:#E03838;"/>
+		<clipPath id="SVGID_6_">
+			<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
+		</clipPath>
+		<g class="st2">
+			<defs>
+				<rect id="SVGID_7_" x="-9.5" y="149" width="590.7" height="945.1"/>
+			</defs>
+			<use xlink:href="#SVGID_7_"  style="overflow:visible;fill:#E03838;"/>
+			<clipPath id="SVGID_8_">
+				<use xlink:href="#SVGID_7_"  style="overflow:visible;"/>
+			</clipPath>
+			<rect x="343.1" y="163.8" class="st3" width="184.6" height="184.6"/>
+		</g>
+	</g>
+	<text transform="matrix(1 0 0 1 96.1474 276.0887)"><tspan x="0" y="0" class="st4 st5 st6 st7">GREE</tspan><tspan x="195.8" y="0" class="st4 st5 st6">N</tspan></text>
+	<text transform="matrix(1 0 0 1 370.1227 274.971)"><tspan x="0" y="0" class="st8 st9 st6 st10">SP</tspan><tspan x="70.2" y="0" class="st8 st9 st6 st11">O</tspan><tspan x="106" y="0" class="st8 st9 st6">T</tspan></text>
+</g>
+</svg>

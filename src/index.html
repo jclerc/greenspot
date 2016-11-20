@@ -10,11 +10,11 @@
   <body>
     <header class="header">
       <nav class="navigation">
-        <div class="navigation__item navigation__item_left navigation__item_icon">
+        <div class="navigation__item navigation__item_hidden navigation__item_left navigation__item_icon">
           <div class="icon icon_responsive icon_back"></div>
         </div>
         <div class="navigation__item navigation__item_middle" data-goto="home">
-          <a href="/" class="navigation__link">
+          <a href="#" data-goto="home" class="navigation__link">
             <img src="/img/logo.png" alt="GreenSpot" class="navigation__logo">
           </a>
         </div>
@@ -47,10 +47,10 @@
         </div>
 
       </div>
-      <div class="page page_menu" style="display: none;">
+      <div class="page page_menu page_hidden">
         <div class="menu">
           <div class="menu__top">
-            <h2 class="title">HELLO !</h2>
+            <h2 class="title">Hello !</h2>
             <p class="subtitle">
               Begin the experience by tapping the <span class="page_menu_subtitle_highlight">discover button</span>.
             </p>
@@ -59,10 +59,10 @@
           <div class="menu__items">
             <div class="carousel">
               <div class="carousel__slides">
-                <div class="carousel__item carousel__item_active"></div>
-                <div class="carousel__item"></div>
-                <div class="carousel__item"></div>
-                <div class="carousel__item"></div>
+                <div class="carousel__item carousel__item_1 carousel__item_active"></div>
+                <div class="carousel__item carousel__item_2"></div>
+                <div class="carousel__item carousel__item_3"></div>
+                <div class="carousel__item carousel__item_4"></div>
               </div>
             </div>
           </div>
@@ -74,14 +74,99 @@
           </div>
         </div>
       </div>
-      <div class="page page_item page_item-1" style="display: none;">
-        <h1>First Item</h1>
+      <div class="page page_item page_item-1 page_hidden">
+        <div class="step step-1 step_hidden">
+          <div class="product">
+            <h1 class="title__product">Les Cookies</h1>
+            <div class="product__image"></div>
+            <div class="product__subtitle">
+              <span class="product__subtitle_highlight">34.5M</span>
+              <p class="product__subtitle_classic">
+              cookies vendus <br> par jour
+              </p>
+            </div>
+            <p class="product__text">Les cookies sont l’une des sucreries préférées des occidentaux. Ils sont consommés aussi bien au goûter qu’au petit déjeuner. Le cookie est ancrée dans les moeurs depuis 200 ans.</p>
+            <p data-goto="item-1/step-2">PASSER AU SUIVANT</p>
+          </div>
+        </div>
+        <div class="step step-2 step_hidden">
+          <div class="product">
+            <h1 class="title__product">Les Cookies</h1>
+            <p class="product__text">Malgré cela les cookies renferment parfois des produits gras et très sucrés parmi lesquel l’on peut trouver de l’huile de palme.</p>
+            <p class="product__text">Un grand nombre de marques de cookies très populaires utilisent de l’huile de palme dans leurs produits</p>
+            <div class="product__image product__image-step2"></div>
+            <p class="product__text">On en retrouve également dans beaucoup de produit du quotidien : cosmétique, biscuits apéritifs, pâtes à tartiner...</p>
+            <p data-goto="item-1/step-3">PASSER AU SUIVANT</p>
+          </div>
+        </div>
+        <div class="step step-3 step_hidden">
+          <div class="product">
+            <h1 class="title__product">Les Cookies</h1>
+            <p class="product__text">Cette huile est rîche en matières grasses et peut provoquer des problèmes cardiovasculaires.
+            Mais ce sont ses conséquences sur l’environnement qui sont les plus impactantes.</p>
+            <div class="product__subtitle">
+              <p class="product__subtitle_special">Cassez le cookie pour continuer</p>
+            </div>
+            <div class="product__image"></div>
+          </div>
+        </div>
       </div>
-      <div class="page page_item page_item-2" style="display: none;">
-        <h1>Second Item</h1>
+      <div class="page page_item page_item-2 page_hidden">
+        <div class="step step-1">
+          <div class="product">
+            <h1 class="title__product">Le Smartphone</h1>
+            <div class="animation__item-2"> <!-- add "animation__item-2_view3d" for animation -->
+              <div class="product__image product__image-anim product__image-3"></div>
+              <div class="product__image product__image-anim product__image-2"></div>
+              <div class="product__image product__image-anim product__image-1"></div>
+            </div>
+            <div class="chat">
+              <div class="message">
+                <div class="message__bubble message__bubble_computer">
+                  <p class="message__text">
+                    1.4 Millions de portable vendus dans le monde chaque semaine.
+                  </p>
+                </div>
+              </div>
+              <div class="message">
+                <div class="message__bubble message__bubble_user">
+                  <p class="message__text">
+                    1.4 Millions de portable vendus dans le monde chaque semaine.
+                  </p>
+                </div>
+              </div>
+              <div class="message">
+                <div class="message__bubble message__bubble_computer">
+                  <p class="message__text">
+                    1.4 Millions de portable vendus dans le monde chaque semaine.
+                  </p>
+                </div>
+              </div>
+              <div class="message">
+                <div class="message__bubble message__bubble_user">
+                  <p class="message__text">
+                    1.4 Millions de portable vendus dans le monde chaque semaine.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="message__bottom">
+                <input type="text" class="message__answer" placeholder="Message" maxlength="50">
+                <div class="message__button">
+                  <p class="message__button__text">Envoyer</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="step step-2">
+        </div>
       </div>
-      <div class="page page_item page_item-3" style="display: none;">
+      <div class="page page_item page_item-3 page_hidden">
         <h1>Third Item</h1>
+      </div>
+      <div class="navigation-bar navigation-bar_hidden">
+          <div class="navigation-bar__overlay"></div>
+          <div class="navigation-bar__progress"></div>
       </div>
     </section>
     <script src="/js/app.js"></script>

@@ -1,0 +1,157 @@
+
+.product {
+  padding: 0 28px;
+  font-weight: lighter;
+  font-size: 22px;
+  overflow-y: scroll;
+  position: relative;
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+.product__image {
+  background-image: url(../img/cookie.svg);
+  background-repeat: no-repeat;
+  height: 180px;
+  width: 180px;
+  margin: auto;
+}
+
+.product__image-step2 {
+  background-image: url(../img/cookie_slice.svg);
+  width: 250px;
+}
+
+.product__image-anim {
+  background-image: url(../img/smartphone-1.svg);
+  width: 100%;
+  position: absolute;
+}
+
+.product__image-3 {
+  background-image: url(../img/smartphone_back.svg);
+}
+
+.animation__item-2_view3d .product__image-3 {
+  transform: translateZ(-100px);
+}
+
+.animation__item-2_view3d .product__image-2 {
+  transform: translateZ(-25px);
+}
+
+.animation__item-2_view3d .product__image-1 {
+  transform: translateZ(50px);
+}
+
+.product__image-2 {
+  background-image: url(../img/smartphone_circuit.svg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+
+.product__subtitle {
+  display: flex;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.animation__item-2 {
+  height: 180px;
+  width: 97px;
+  position: relative;
+  margin: 30px auto;
+}
+
+.animation__item-2_view3d {
+  transform-style: preserve-3d;
+  transform: rotate3d(0.6, -1, 0, 40deg);
+  perspective: 1000px;
+}
+
+.product__subtitle_highlight {
+  color: $primary-color;
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.product__subtitle_classic {
+  color: $subtitle-color;
+  margin: 0;
+  line-height: 20px;
+  padding-top: 4px;
+  text-align: left;
+}
+
+.product__subtitle_special {
+  color: $primary-color;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.message {
+  font-size: 12px;
+  overflow: scroll;
+  width: 100%;
+}
+
+.message__bubble {
+  border-radius: 13px;
+  background-color: $background-color;
+  padding: 0 14px;
+  margin: 5px 0;
+  max-width: 80%;
+
+  &::after {
+    clear: both;
+  }
+}
+
+.message__bubble_computer {
+  float: left;
+}
+
+.message__bubble_user {
+  background-color: $message-color;
+  color: #ffffff;
+  float: right;
+}
+
+.chat {
+  margin-top: 20px;
+  background: $screen-color;
+  padding: 5px;
+}
+
+.message__bottom {
+  background-color: $background-color;
+  padding: 10px 5px;
+}
+
+.message__answer {
+  border: 1px solid $icon-color;
+  border-radius: 20px;
+  font-size: 12px;
+  padding: 10px 2px;
+  padding-left: 20px;
+  width: 74%;
+}
+
+.message__button {
+  background-color: $message-color;
+  display: inline-block;
+  width: 25%;
+  height: auto;
+  border-radius: 20px;
+  float: right;
+}
+
+.message__button__text {
+  margin: 0;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  padding: 10px 2px;
+}
