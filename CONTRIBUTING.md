@@ -1,24 +1,3 @@
-# Installation
-
-```sh
-git clone https://github.com/JClerc/GreenSpot.git
-cd GreenSpot
-git checkout develop
-npm install
-```
-
-# Working with Gulp
-
-If you have Gulp installed globally:
-```
-gulp
-```
-
-And if you haven't:
-```
-npm run gulp
-```
-
 # Guidelines
 
 - Indentation is made with 2 spaces.
@@ -57,7 +36,7 @@ Ignore changes in master, since develop has latest changes.
 # Move to master
 git checkout master
 # Merge and discard changes in master
-git merge develop -X theirs 
+git merge develop -X theirs
 ```
 
 **3. Create tag**
