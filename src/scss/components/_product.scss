@@ -9,6 +9,11 @@
   padding-bottom: 20px;
 }
 
+.product-2 {
+  height: inherit;
+  padding-bottom: 0;
+}
+
 .product__image {
   background-image: url(../img/cookie.svg);
   background-repeat: no-repeat;
@@ -120,7 +125,11 @@
 }
 
 .chat {
-  margin-top: 20px;
+  position: absolute;
+  bottom: 10px;
+}
+
+.chat-content {
   background: $screen-color;
   padding: 5px;
 }
