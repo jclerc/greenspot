@@ -132,6 +132,8 @@
 .chat-content {
   background: $screen-color;
   padding: 5px;
+  overflow-y: scroll;
+  height: 240px;
 }
 
 .message__bottom {
