@@ -152,13 +152,18 @@
             </div>
             <div class="message__bottom">
                 <input type="text" class="message__answer" placeholder="Message" maxlength="50">
-                <div class="message__button">
+                <div class="message__button" data-goto="item-2/step-2">
                   <p class="message__button__text">Envoyer</p>
                 </div>
             </div>
           </div>
         </div>
         <div class="step step-2">
+          <p>Second part of second item</p>
+          <p data-goto="item-2/step-3">go to 3rd part</p>
+        </div>
+        <div class="step step-3">
+          <p>Third part of second item</p>
         </div>
       </div>
       <div class="page page_item page_item-3 page_hidden">
