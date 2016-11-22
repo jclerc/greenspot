@@ -6,7 +6,7 @@
   overflow-y: scroll;
   position: relative;
   height: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 
 .product-2 {
@@ -32,7 +32,26 @@
   background-repeat: no-repeat;
   height: 180px;
   width: 180px;
+  background-size: contain;
   margin: auto;
+}
+
+.product__image_cookie-animated {
+  animation: bounce 1s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .product__counter-image-4 {
@@ -211,8 +230,24 @@
   position: absolute;
 }
 
-.product__image-step7 {
-  background-image: url(../img/forest.svg);
+.product__image-step7_1 {
+  background-image: url(../img/forest-1.svg);
+}
+
+.product__image-step7_2 {
+  background-image: url(../img/forest-2.svg);
+}
+
+.product__image-step7_3 {
+  background-image: url(../img/forest-3.svg);
+}
+
+.product__image-step7_4 {
+  background-image: url(../img/forest-4.svg);
+}
+
+.product__image-step7_5 {
+  background-image: url(../img/forest-5.svg);
 }
 
 .product__text {
