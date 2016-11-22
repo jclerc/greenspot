@@ -132,14 +132,14 @@
         <div class="step step-1">
           <div class="product product-2">
             <h1 class="title__product">Le Smartphone</h1>
-            <div class="animation__item-2"> <!-- add "animation__item-2_view3d" for animation -->
+            <div class="animation__item-2" data-animation="phone3d" data-then="item-2/step-2">
               <div class="product__image product__image-anim product__image-3"></div>
               <div class="product__image product__image-anim product__image-2"></div>
               <div class="product__image product__image-anim product__image-1"></div>
             </div>
           </div>
           <div class="chat">
-            <div class="chat-content">
+            <div class="chat-content" data-animation="chat-content">
                   <div class="message">
                    <div class="message__bubble message__bubble_user">
                      <p class="message__text">
@@ -199,35 +199,47 @@
                  <div class="message">
                    <div class="message__bubble message__bubble_computer">
                      <p class="message__text">
-                      Selon toi, combien de smartphones ont été vendus dans le monde en 2015 ?
+                      Selon toi, combien de millions de smartphones ont été vendus dans le monde en 2015 ?
                      </p>
                    </div>
                  </div>
-                 <div class="message">
+                 <div class="message message_hidden" data-animation="chat-reply">
                    <div class="message__bubble message__bubble_user">
-                     <p class="message__text">
-                      (Réponse de l'utilisateur)
-                     </p>
+                     <p class="message__text"></p>
                    </div>
                  </div>
-                 <div class="message">
+                 <div class="message message_hidden" data-animation="chat-answer-wrong">
                    <div class="message__bubble message__bubble_computer">
                      <p class="message__text">
-                      Et non, raté! En 2015, 1,4 milliards de smartphones ont été vendus dans le monde. Retire la coque du téléphone pour continuer l’aventure.
+                      Et non, raté! En 2015, 1400 millions de smartphones ont été vendus dans le monde. Retire la coque du téléphone en swipant pour continuer l’aventure.
+                     </p>
+                   </div>
+                 </div>
+                 <div class="message message_hidden" data-animation="chat-answer-correct">
+                   <div class="message__bubble message__bubble_computer">
+                     <p class="message__text">
+                      Bravo ! Retire la coque du téléphone en swipant pour continuer l’aventure.
                      </p>
                    </div>
                  </div>
                </div>
-               <div class="message__bottom">
+               <form class="message__bottom" data-animation="chat-controls" data-answer="1400">
                  <input type="text" class="message__answer" placeholder="Message" maxlength="50">
-                 <div class="message__button" data-goto="item-2/step-2">
-                   <p class="message__button__text">Envoyer</p>
+                 <div class="message__button">
+                   <button type="submit" class="message__button__text">Envoyer</button>
                  </div>
-               </div>
+               </form>
              </div>
           </div>
           <div class="step step-2">
             <div class="product">
+              <h1 class="title__product">Le Smartphone</h1>
+              <div class="animation__item-2" data-class-onload="animation__item-2_view3d">
+                <div class="product__image product__image-anim product__image-3"></div>
+                <div class="product__image product__image-anim product__image-2"></div>
+                <div class="product__image product__image-anim product__image-1"></div>
+              </div>
+              <p>Texte</p>
               <p class="product__subtitle_special">Cliquez pour créer des téléphones</p>
               <div class="product__counter">
                 <div class="product__counter-image-4"></div>
