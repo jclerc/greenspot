@@ -50,4 +50,50 @@ App.ready($ => {
 
   })();
 
+  let chatUnlocked = false;
+
+  (function chat() {
+
+    const $chat = $('[data-animation="chat-content"]');
+    const $chatControls = $('[data-animation="chat-controls"]');
+    const $controlInput = $chatControls.find('.message__answer');
+
+    const $chatReply = $('[data-animation="chat-reply"]');
+    const $chatAnswerWrong = $('[data-animation="chat-answer-wrong"]');
+    const $chatAnswerCorrect = $('[data-animation="chat-answer-correct"]');
+
+    $chatControls.on('submit', function (e) {
+      if ($controlInput.val()) {
+        $chatReply.removeClass('message_hidden').find('.message__text').text($controlInput.val());
+        if ($chatControls.data('answer') == $controlInput.val()) {
+          $chatAnswerCorrect.removeClass('message_hidden');
+        } else {
+          $chatAnswerWrong.removeClass('message_hidden');
+        }
+
+        $($chat).scrollTop($($chat).prop('scrollHeight'));
+        chatUnlocked = true;
+      } else {
+        $controlInput.focus();
+      }
+
+      e.preventDefault();
+    });
+
+  })();
+
+  (function phone3d() {
+
+    const $phone3d = $('[data-animation="phone3d"]');
+
+    $phone3d.on('swipe', function (e) {
+
+      if (chatUnlocked) {
+        App.router.navigate('/' + $(this).data('then'));
+      }
+
+    });
+
+  })();
+
 });
