@@ -24,6 +24,8 @@
 .navigation-bar__progress {
   background-color: $primary-color;
   float: left;
-  width: 20%;
+  width: 100%;
   height: 10px;
+  transform: translateX(-100%);
+  transition: all 0.3s;
 }

@@ -2,11 +2,25 @@
 App.ready($ => {
   'use strict';
 
+  const $progress = $('.navigation-bar__progress');
   const listener = function () {
-    if (this.path().toLowerCase().indexOf('/item') === -1) {
+    let path = this.path().toLowerCase();
+    if (path.indexOf('/item') === -1) {
       $('.navigation-bar').addClass('navigation-bar_hidden');
+      $progress.css('transform', null);
     } else {
       $('.navigation-bar').removeClass('navigation-bar_hidden');
+
+      setTimeout(_ => {
+
+        let state = App.getCurrentState();
+        let $page = $('.page_' + state.currentPage);
+        let totalSteps = $page.children('.step').length;
+        let progress = 100 - state.currentStep * 100 / totalSteps;
+
+        $progress.css('transform', 'translateX(-' + progress + '%)');
+
+      }, 1);
     }
   };
 
