@@ -7,23 +7,29 @@ var App = ($ => {
   // Router
   App.router = new Grapnel();
 
-  let currentPage = null;
-  let currentStep = 0;
+  let $currentPage = null;
+  let $currentStep = null;
+  let pageId = null;
+  let stepId = 0;
 
   // Show a page
   App.showPage = function (page, step) {
     $('.page').addClass('page_hidden');
-    $('.page_' + page).removeClass('page_hidden');
-    currentPage = page;
-    currentStep = step ? parseInt(step) : 0;
+    $currentPage = $('.page_' + page).removeClass('page_hidden');
+    pageId = page;
+
     if (step) {
       var steps = $('.page_' + page).find('.step');
       steps.addClass('step_hidden');
-      steps.filter('.step-' + step).removeClass('step_hidden');
+
+      $currentStep = steps.filter('.step-' + step).removeClass('step_hidden');
+      stepId = parseInt(step);
+    } else {
+      stepId = 0;
     }
   };
 
-  App.getCurrentState = _ => ({ currentPage, currentStep });
+  App.getCurrentState = _ => ({ $currentPage, $currentStep, pageId, stepId });
 
   var backAction = e => App.router.navigate('/home');
   $('.navigation__item_left').on('click', e => backAction(e));
