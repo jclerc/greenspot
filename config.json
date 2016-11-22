@@ -11,7 +11,13 @@
     },
     "script": {
       "src": [
-        "src/js/libs/*.js",
+        "node_modules/zepto/src/zepto.js",
+        "node_modules/zepto/src/detect.js",
+        "node_modules/zepto/src/event.js",
+        "node_modules/zepto/src/gesture.js",
+        "node_modules/zepto/src/ie.js",
+        "node_modules/zepto/src/touch.js",
+        "node_modules/grapnel/src/grapnel.js",
         "src/js/main.js",
         "src/js/app/*.js"
       ],
