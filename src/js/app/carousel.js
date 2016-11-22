@@ -3,8 +3,8 @@ class Carousel {
 
   constructor(target) {
 
-    var $target = $(target).eq(0);
-    var _this = this;
+    const $target = $(target).eq(0);
+    const _this = this;
 
     this.elements = {
       container: $target,
@@ -49,7 +49,7 @@ class Carousel {
     if (index < 0 || index >= this.count) {
       throw new Error('Index ' + index + ' is out of bounds');
     } else if (index !== this.index) {
-      var width = this.elements.slides.width();
+      const width = this.elements.slides.width();
       this.elements.slides.css('transform', 'translateX(' + -width * index + 'px)');
       this.elements.items.removeClass('carousel__item_active');
       this.elements.items.eq(index).addClass('carousel__item_active');

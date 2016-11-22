@@ -2,7 +2,7 @@
 App.ready($ => {
   'use strict';
 
-  var carousel = new Carousel('.carousel');
+  const carousel = new Carousel('.carousel');
 
   $('[data-goto="menu"]').on('click', e => {
     App.router.navigate('/menu');
