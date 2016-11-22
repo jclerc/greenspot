@@ -5,23 +5,52 @@ App.ready($ => {
   const $progress = $('.navigation-bar__progress');
   const listener = function () {
     let path = this.path().toLowerCase();
+    const $navigationBar = $('.navigation-bar');
+
     if (path.indexOf('/item') === -1) {
-      $('.navigation-bar').addClass('navigation-bar_hidden');
+      // We don't have steps
+      $navigationBar.addClass('navigation-bar_hidden');
       $progress.css('transform', null);
     } else {
-      $('.navigation-bar').removeClass('navigation-bar_hidden');
+      // We have steps
+      $navigationBar.removeClass('navigation-bar_hidden');
 
       setTimeout(_ => {
 
         let state = App.getCurrentState();
-        let $page = $('.page_' + state.currentPage);
-        let totalSteps = $page.children('.step').length;
-        let progress = 100 - state.currentStep * 100 / totalSteps;
+        let $overlay = $navigationBar.find('.navigation-bar__overlay');
+
+        if (state.pageId === 'item-2' && state.stepId === 1) {
+          // Special case: for phone messages
+          $overlay.hide();
+        } else {
+          $overlay.show();
+        }
+
+        let totalSteps = state.$currentPage.children('.step').length;
+        let progress = 100 - state.stepId * 100 / totalSteps;
 
         $progress.css('transform', 'translateX(-' + progress + '%)');
 
       }, 1);
     }
+
+    // Re-add class at every load
+    setTimeout(_ => {
+
+      const state = App.getCurrentState();
+
+      state.$currentPage.find('[data-class-onload]').forEach(e => {
+
+        const $e = $(e);
+        const classOnLoad = $e.data('class-onload');
+
+        $e.removeClass(classOnLoad);
+        setTimeout(_ => $e.addClass(classOnLoad), 10);
+
+      });
+
+    }, 1);
   };
 
   // Attach it
