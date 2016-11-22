@@ -79,14 +79,17 @@
 
 .animation__item-2_view3d .product__image-3 {
   transform: translateZ(-100px);
+  transition: all 0.5s 0.5s;
 }
 
 .animation__item-2_view3d .product__image-2 {
   transform: translateZ(-25px);
+  transition: all 0.5s 0.5s;
 }
 
 .animation__item-2_view3d .product__image-1 {
   transform: translateZ(50px);
+  transition: all 0.5s 0.5s;
 }
 
 .product__image-2 {
@@ -113,6 +116,7 @@
   transform-style: preserve-3d;
   transform: rotate3d(0.6, -1, 0, 40deg);
   perspective: 1000px;
+  transition: all 0.5s;
 }
 
 .product__subtitle_highlight {
@@ -160,8 +164,12 @@
 
 .message__bubble_user {
   background-color: $message-color;
-  color: #ffffff;
+  color: #fff;
   float: right;
+}
+
+.message_hidden {
+  display: none;
 }
 
 .chat {
