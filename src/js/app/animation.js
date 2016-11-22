@@ -4,10 +4,15 @@ App.ready($ => {
 
   (function cookie() {
 
-    let clicks = 0;
-    App.router.on('navigate', e => clicks = 0);
+    const $cookie = $('[data-animation="cookie"]');
 
-    $('[data-animation="cookie"]').on('click', function (e) {
+    let clicks = 0;
+    App.router.on('navigate', e => {
+      $cookie.removeClass('product__image_cookie-animated');
+      clicks = 0;
+    });
+
+    $cookie.on('click', function (e) {
       const $this = $(this);
       if (++clicks <= 3) {
         $this.removeClass('product__image_cookie-animated');
