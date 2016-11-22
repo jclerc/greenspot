@@ -9,22 +9,19 @@ var babel        = require('gulp-babel');
 var sourcemaps   = require('gulp-sourcemaps');
 var concat       = require('gulp-concat');
 var plumber      = require('gulp-plumber');
+var config       = require('./config.json');
 
 // Html
 gulp.task('html', () => {
-  gulp.src('src/*.html')
+  gulp.src(config.tasks.html.src)
   .pipe(plumber())
-  .pipe(gulp.dest('dist/'))
+  .pipe(gulp.dest(config.tasks.html.dest))
   .pipe(browserSync.stream());
 });
 
 // Task script
 gulp.task('script', () => {
-  gulp.src([
-    'src/js/libs/*.js',
-    'src/js/main.js',
-    'src/js/app/*.js',
-  ])
+  gulp.src(config.tasks.script.src)
   .pipe(plumber())
   .pipe(sourcemaps.init())
 
@@ -33,13 +30,13 @@ gulp.task('script', () => {
   .pipe(uglify())
 
   .pipe(sourcemaps.write('.'))
-  .pipe(gulp.dest('dist/js'))
+  .pipe(gulp.dest(config.tasks.script.dest))
   .pipe(browserSync.stream());
 });
 
 // Task style
 gulp.task('style', () => {
-  gulp.src('src/scss/*.scss')
+  gulp.src(config.tasks.style.src)
   .pipe(plumber())
   .pipe(sourcemaps.init())
 
@@ -47,41 +44,41 @@ gulp.task('style', () => {
   .pipe(autoprefixer('last 2 versions'))
 
   .pipe(sourcemaps.write('.'))
-  .pipe(gulp.dest('dist/css'))
+  .pipe(gulp.dest(config.tasks.style.dest))
   .pipe(browserSync.stream());
 });
 
 // Image compressor
 gulp.task('image', () => {
-  gulp.src('src/img/**/*')
+  gulp.src(config.tasks.image.src)
   .pipe(imagemin())
-  .pipe(gulp.dest('dist/img/'));
+  .pipe(gulp.dest(config.tasks.image.dest));
 });
 
 // Media files
 gulp.task('media', () => {
-  gulp.src('src/media/**/*')
-  .pipe(gulp.dest('dist/media/'));
+  gulp.src(config.tasks.media.src)
+  .pipe(gulp.dest(config.tasks.media.dest));
 });
 
 // Fonts
 gulp.task('fonts', () => {
-  gulp.src('src/fonts/*')
+  gulp.src(config.tasks.fonts.src)
   .pipe(plumber())
-  .pipe(gulp.dest('dist/fonts/'))
+  .pipe(gulp.dest(config.tasks.fonts.dest))
   .pipe(browserSync.stream());
 });
 
 // Watches changes
 gulp.task('watch', () => {
-  browserSync.init({ server: 'dist/' });
-  gulp.watch('src/*.html', ['html']);
-  gulp.watch('src/img/**/*', ['image']);
-  gulp.watch('src/media/**/*', ['media']);
-  gulp.watch('src/js/**/*.js', ['script']);
-  gulp.watch('src/fonts/**/*', ['fonts']);
-  gulp.watch('src/scss/**/*.scss', ['style']);
-  gulp.watch('src/*.html').on('change', browserSync.reload);
+  browserSync.init({ server: config.server.directory });
+  gulp.watch(config.tasks.html.src, ['html']);
+  gulp.watch(config.tasks.image.src, ['image']);
+  gulp.watch(config.tasks.media.src, ['media']);
+  gulp.watch(config.tasks.script.src, ['script']);
+  gulp.watch(config.tasks.fonts.src, ['fonts']);
+  gulp.watch(config.tasks.style.src, ['style']);
+  gulp.watch(config.tasks.html.src).on('change', browserSync.reload);
 });
 
 // Trigger build & watch
