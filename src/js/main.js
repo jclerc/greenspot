@@ -27,7 +27,7 @@ var App = ($ => {
 
     }, 1);
 
-    return this;
+    return listener;
 
   })());
 
