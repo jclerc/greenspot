@@ -35,21 +35,9 @@ App.ready($ => {
       }, 1);
     }
 
-    // Re-add class at every load
     setTimeout(_ => {
-
-      const state = App.getCurrentState();
-
-      state.$currentPage.find('[data-class-onload]').forEach(e => {
-
-        const $e = $(e);
-        const classOnLoad = $e.data('class-onload');
-
-        $e.removeClass(classOnLoad);
-        setTimeout(_ => $e.addClass(classOnLoad), 10);
-
-      });
-
+      let state = App.getCurrentState();
+      state.$currentStep.children('.product').scrollTop(0);
     }, 1);
   };
 
@@ -68,7 +56,12 @@ App.ready($ => {
     }
 
     App.showPage('item-' + id, step);
-    App.backAction('/menu');
+
+    if (step > 1) {
+      App.backAction('/item-' + id + '/step-' + (step - 1));
+    } else {
+      App.backAction('/menu');
+    }
   });
 
   $('[data-goto^="item-"]').on('click', function (e) {
