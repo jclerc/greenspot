@@ -275,13 +275,18 @@
 
 .product__text_special-2 {
   float: right;
-  width: 150px;
   margin: 0;
 }
 
 .product__illustration {
-  width: 100%;
-  position: relative;
+  margin: 10px 0;
+
+  &::before,
+  &::after {
+    content: ' ';
+    display: table;
+    clear: both;
+  }
 }
 
 .product__subtitle_special-2 {
