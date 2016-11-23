@@ -21,12 +21,14 @@ gulp.task('html', () => {
 });
 
 // Task script
-gulp.task('script', () => {
-  gulp.src(config.tasks.script.src)
+gulp.task('script', ['modernizr'], () => {
+  let src = [].concat(config.tasks.script.src)
+              .concat(config.tasks.script.dest + 'modernizr.js');
+
+  gulp.src(src)
   .pipe(plumber())
   .pipe(sourcemaps.init())
 
-  .pipe(modernizr())
   .pipe(babel({ presets: ['es2015'] }))
   .pipe(concat('app.js'))
   .pipe(uglify())
@@ -34,6 +36,14 @@ gulp.task('script', () => {
   .pipe(sourcemaps.write('.'))
   .pipe(gulp.dest(config.tasks.script.dest))
   .pipe(browserSync.stream());
+});
+
+// Task Modernizr
+gulp.task('modernizr', () => {
+  gulp.src(config.tasks.script.src)
+    .pipe(modernizr())
+    .pipe(uglify())
+    .pipe(gulp.dest(config.tasks.script.dest));
 });
 
 // Task style
