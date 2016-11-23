@@ -23,8 +23,7 @@
 .product__counter-text {
   padding-left: 30px;
   margin: 0;
-  position: absolute;
-  top: 20%;
+  padding-top: 10px;
 }
 
 .product__image {
@@ -291,6 +290,11 @@
 
 .product__subtitle_special-2 {
   color: $special-color;
+  font-weight: bold;
+}
+
+.product__subtitle_special-3 {
+  color: $icon-color;
 }
 
 .product__title {
@@ -321,4 +325,27 @@
 .product__image_dark-3 {
   background-image: url(../img/blood-lake.svg);
   height: 22px;
+}
+
+.product__animation-step-3 {
+  height: 300px;
+  width: 150px;
+  margin: auto;
+}
+
+.product__animation-step-3-1 {
+  height: 150px;
+  background-image: url(../img/factory-pipe.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.product__animation-step-3-2 {
+  transform: scale(2);
+}
+
+.product__animation-step-3-2-active {
+  transform: scale(1);
+  transition: all 0.3s;
 }
