@@ -98,4 +98,40 @@ App.ready($ => {
 
   })();
 
+  (function factory() {
+
+    const $factory = $('[data-animation="factory"]');
+    const $counter = $('[data-animation="counter"]');
+    const $item = $factory.find('.product__animation-step-3-2');
+
+    const $text1 = $('.product__subtitle_special-3');
+    const $text2 = $('.product__subtitle_special-4');
+
+    const texts = [
+      ['ce que vous faites a des ', 'conséquences'],
+      ['créer des smartphones c\'est ', 'vider des océans'],
+      ['un smartphone, c\'est ', 'un panda tué'],
+      ['changez les choses ', 'dès maintenant !'],
+    ];
+
+    const step = 0.5;
+    let current = 2;
+    let score = 0;
+    let i = 0;
+
+    $factory.on('click', function (e) {
+      e.preventDefault();
+      if (current > 0) {
+        $text1.text(texts[i][0]);
+        $text2.text(texts[i][1]);
+        i++;
+        score += 100 + ~~(Math.random() * 40);
+        $counter.text(score);
+        current -= step;
+        $item.css('transform', 'scale(' + current + ')');
+      }
+    });
+
+  })();
+
 });
