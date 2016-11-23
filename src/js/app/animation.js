@@ -86,7 +86,9 @@ App.ready($ => {
 
     const $phone3d = $('[data-animation="phone3d"]');
 
-    $phone3d.on('swipe', function (e) {
+    let event = Modernizr.touchevents ? 'swipe' : 'click';
+
+    $phone3d.on(event, function (e) {
 
       if (chatUnlocked) {
         App.router.navigate('/' + $(this).data('then'));
