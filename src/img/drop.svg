@@ -1,36 +1,12 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 294.649 294.649" style="enable-background:new 0 0 294.649 294.649;" xml:space="preserve" width="512px" height="512px">
-<path d="M158.116,6.916c-1.938-4.214-6.151-6.915-10.789-6.916c-4.639-0.001-8.855,2.697-10.793,6.911  c-29.875,64.975-82.858,148.605-82.858,194.09c0,51.721,41.927,93.648,93.648,93.648s93.649-41.928,93.649-93.648  C240.974,155.519,187.992,71.891,158.116,6.916z M143.324,264.816c-34.601,0-62.75-28.149-62.75-62.75c0-6.903,5.597-12.5,12.5-12.5  c6.903,0,12.5,5.597,12.5,12.5c0,20.815,16.935,37.75,37.75,37.75c6.903,0,12.5,5.597,12.5,12.5  C155.824,259.22,150.227,264.816,143.324,264.816z" fill="#3f352f"/>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E82D3A;}
+</style>
+<path class="st0" d="M274.8,12C271.4,4.7,264.1,0,256,0s-15.4,4.7-18.8,12c-51.9,112.9-144,258.2-144,337.3
+	C93.3,439.1,166.1,512,256,512s162.7-72.9,162.7-162.7C418.7,270.2,326.7,124.9,274.8,12z M249,460.2c-60.1,0-109-48.9-109-109
+	c0-12,9.7-21.7,21.7-21.7s21.7,9.7,21.7,21.7c0,36.2,29.4,65.6,65.6,65.6c12,0,21.7,9.7,21.7,21.7C270.8,450.4,261,460.2,249,460.2z
+	"/>
 </svg>
