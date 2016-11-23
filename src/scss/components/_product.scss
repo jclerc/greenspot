@@ -292,3 +292,37 @@
   font-size: 20px;
   font-family: 'Open Sans', sans-serif;
 }
+
+.product__image-step6 {
+  background-image: url(../img/forest-1.svg);
+  width: 86px;
+  height: 100px;
+  float: left;
+}
+
+.product__text_special-2 {
+  float: right;
+}
+
+.product__text_dark {
+  color: $special-color-2;
+}
+
+.product__text_motto {
+  font-style: italic;
+}
+
+.product__image_dark {
+  background-image: url(../img/cow-skull.svg);
+}
+
+.product__image_dark-2 {
+  background-image: url(../img/drop.svg);
+  width: 20px;
+  height: 25px;
+}
+
+.product__image_dark-3 {
+  background-image: url(../img/blood-lake.svg);
+  height: 22px;
+}
