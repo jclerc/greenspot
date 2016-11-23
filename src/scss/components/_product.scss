@@ -285,3 +285,10 @@
 .product__subtitle_special-2 {
   color: $special-color;
 }
+
+.product__title {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
