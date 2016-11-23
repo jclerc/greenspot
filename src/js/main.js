@@ -7,6 +7,29 @@ var App = ($ => {
   // Router
   App.router = new Grapnel();
 
+  // Listener
+  App.router.on('navigate', function () {
+
+    // Re-add class at every load
+    setTimeout(_ => {
+
+      const state = App.getCurrentState();
+
+      state.$currentPage.find('[data-class-onload]').forEach(e => {
+
+        const $e = $(e);
+        const classOnLoad = $e.data('class-onload');
+
+        $e.removeClass(classOnLoad);
+        setTimeout(_ => $e.addClass(classOnLoad), 10);
+
+      });
+
+    }, 1);
+
+  });
+
+  // State
   let $currentPage = $('.page_home');
   let $currentStep = null;
   let pageId = 'home';
