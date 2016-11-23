@@ -31,7 +31,7 @@ var App = ($ => {
 
   // State
   let $currentPage = $('.page_home');
-  let $currentStep = null;
+  let $currentStep = $();
   let pageId = 'home';
   let stepId = 0;
 
@@ -48,6 +48,7 @@ var App = ($ => {
       $currentStep = steps.filter('.step-' + step).removeClass('step_hidden');
       stepId = parseInt(step);
     } else {
+      $currentStep = $();
       stepId = 0;
     }
   };
