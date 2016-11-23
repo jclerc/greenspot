@@ -21,9 +21,9 @@ gulp.task('html', _ => {
 });
 
 // Task script
-gulp.task('script', ['modernizr'], _ => {
-  let src = [].concat(config.tasks.script.src)
-              .concat(config.tasks.script.dest + 'modernizr.js');
+gulp.task('script', _ => {
+  let src = [].concat(config.tasks.script.dest + 'modernizr.js')
+              .concat(config.tasks.script.src);
 
   gulp.src(src)
   .pipe(plumber())
@@ -36,14 +36,6 @@ gulp.task('script', ['modernizr'], _ => {
   .pipe(sourcemaps.write('.'))
   .pipe(gulp.dest(config.tasks.script.dest))
   .pipe(browserSync.stream());
-});
-
-// Task Modernizr
-gulp.task('modernizr', _ => {
-  gulp.src(config.tasks.script.src)
-    .pipe(modernizr())
-    .pipe(uglify())
-    .pipe(gulp.dest(config.tasks.script.dest));
 });
 
 // Task style
@@ -93,6 +85,15 @@ gulp.task('watch', _ => {
   gulp.watch(config.tasks.html.src).on('change', browserSync.reload);
 });
 
+// Build Task Modernizr
+gulp.task('modernizr', _ => {
+  gulp.src(config.tasks.script.src)
+    .pipe(modernizr())
+    .pipe(gulp.dest(config.tasks.script.dest));
+});
+
 // Trigger build & watch
 gulp.task('default', ['script', 'fonts', 'style', 'image', 'media', 'html', 'watch']);
 
+// Only build
+gulp.task('build', ['script', 'fonts', 'style', 'image', 'media', 'html']);
