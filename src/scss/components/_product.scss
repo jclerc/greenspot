@@ -201,21 +201,22 @@
 }
 
 .message__button {
-  background-color: $message-color;
   display: inline-block;
   width: 25%;
   height: auto;
-  border-radius: 20px;
   float: right;
 }
 
 .message__button__text {
+  border: 1px solid $message-color;
   margin: 0;
   color: white;
   font-size: 12px;
   text-align: center;
   padding: 10px 2px;
   width: 100%;
+  border-radius: 20px;
+  background-color: $message-color;
 }
 
 .product__image-step4 {
