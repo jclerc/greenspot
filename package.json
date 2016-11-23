@@ -26,6 +26,7 @@
     "gulp-babel": "^6.1.2",
     "gulp-concat": "^2.6.0",
     "gulp-imagemin": "^3.0.3",
+    "gulp-modernizr": "^1.0.0-alpha",
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^2.3.2",
     "gulp-sass-glob": "^1.0.6",

@@ -9,6 +9,7 @@ var babel        = require('gulp-babel');
 var sourcemaps   = require('gulp-sourcemaps');
 var concat       = require('gulp-concat');
 var plumber      = require('gulp-plumber');
+var modernizr    = require('gulp-modernizr');
 var config       = require('./config.json');
 
 // Html
@@ -25,6 +26,7 @@ gulp.task('script', () => {
   .pipe(plumber())
   .pipe(sourcemaps.init())
 
+  .pipe(modernizr())
   .pipe(babel({ presets: ['es2015'] }))
   .pipe(concat('app.js'))
   .pipe(uglify())
