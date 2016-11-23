@@ -13,7 +13,7 @@ var modernizr    = require('gulp-modernizr');
 var config       = require('./config.json');
 
 // Html
-gulp.task('html', () => {
+gulp.task('html', _ => {
   gulp.src(config.tasks.html.src)
   .pipe(plumber())
   .pipe(gulp.dest(config.tasks.html.dest))
@@ -21,7 +21,7 @@ gulp.task('html', () => {
 });
 
 // Task script
-gulp.task('script', ['modernizr'], () => {
+gulp.task('script', ['modernizr'], _ => {
   let src = [].concat(config.tasks.script.src)
               .concat(config.tasks.script.dest + 'modernizr.js');
 
@@ -39,7 +39,7 @@ gulp.task('script', ['modernizr'], () => {
 });
 
 // Task Modernizr
-gulp.task('modernizr', () => {
+gulp.task('modernizr', _ => {
   gulp.src(config.tasks.script.src)
     .pipe(modernizr())
     .pipe(uglify())
@@ -47,7 +47,7 @@ gulp.task('modernizr', () => {
 });
 
 // Task style
-gulp.task('style', () => {
+gulp.task('style', _ => {
   gulp.src(config.tasks.style.src)
   .pipe(plumber())
   .pipe(sourcemaps.init())
@@ -61,20 +61,20 @@ gulp.task('style', () => {
 });
 
 // Image compressor
-gulp.task('image', () => {
+gulp.task('image', _ => {
   gulp.src(config.tasks.image.src)
   .pipe(imagemin())
   .pipe(gulp.dest(config.tasks.image.dest));
 });
 
 // Media files
-gulp.task('media', () => {
+gulp.task('media', _ => {
   gulp.src(config.tasks.media.src)
   .pipe(gulp.dest(config.tasks.media.dest));
 });
 
 // Fonts
-gulp.task('fonts', () => {
+gulp.task('fonts', _ => {
   gulp.src(config.tasks.fonts.src)
   .pipe(plumber())
   .pipe(gulp.dest(config.tasks.fonts.dest))
@@ -82,7 +82,7 @@ gulp.task('fonts', () => {
 });
 
 // Watches changes
-gulp.task('watch', () => {
+gulp.task('watch', _ => {
   browserSync.init({ server: config.server.directory });
   gulp.watch(config.tasks.html.src, ['html']);
   gulp.watch(config.tasks.image.src, ['image']);
