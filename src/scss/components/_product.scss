@@ -6,7 +6,24 @@
   overflow-y: scroll;
   position: relative;
   height: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
+}
+
+.product-2 {
+  height: inherit;
+  padding-bottom: 0;
+}
+
+.product__counter {
+  height: 50px;
+  position: relative;
+  padding-top: 20px 0;
+}
+
+.product__counter-text {
+  padding-left: 30px;
+  margin: 0;
+  padding-top: 10px;
 }
 
 .product__image {
@@ -14,12 +31,40 @@
   background-repeat: no-repeat;
   height: 180px;
   width: 180px;
+  background-size: contain;
   margin: auto;
+}
+
+.product__image_cookie-animated {
+  animation: bounce 1s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.product__counter-image-4 {
+  background-image: url(../img/smartphone-1.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 .product__image-step2 {
   background-image: url(../img/cookie_slice.svg);
-  width: 250px;
+  width: 100%;
+  background-size: cover;
 }
 
 .product__image-anim {
@@ -34,14 +79,17 @@
 
 .animation__item-2_view3d .product__image-3 {
   transform: translateZ(-100px);
+  transition: all 0.5s 0.5s;
 }
 
 .animation__item-2_view3d .product__image-2 {
   transform: translateZ(-25px);
+  transition: all 0.5s 0.5s;
 }
 
 .animation__item-2_view3d .product__image-1 {
   transform: translateZ(50px);
+  transition: all 0.5s 0.5s;
 }
 
 .product__image-2 {
@@ -68,6 +116,7 @@
   transform-style: preserve-3d;
   transform: rotate3d(0.6, -1, 0, 40deg);
   perspective: 1000px;
+  transition: all 0.5s;
 }
 
 .product__subtitle_highlight {
@@ -88,7 +137,7 @@
   color: $primary-color;
   font-size: 15px;
   text-transform: uppercase;
-  padding-bottom: 10px;
+  text-align: center;
 }
 
 .message {
@@ -115,14 +164,25 @@
 
 .message__bubble_user {
   background-color: $message-color;
-  color: #ffffff;
+  color: #fff;
   float: right;
 }
 
+.message_hidden {
+  display: none;
+}
+
 .chat {
-  margin-top: 20px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+.chat-content {
   background: $screen-color;
   padding: 5px;
+  overflow-y: scroll;
+  height: 240px;
 }
 
 .message__bottom {
@@ -140,18 +200,153 @@
 }
 
 .message__button {
-  background-color: $message-color;
   display: inline-block;
   width: 25%;
   height: auto;
-  border-radius: 20px;
   float: right;
 }
 
 .message__button__text {
+  border: 1px solid $message-color;
   margin: 0;
   color: white;
   font-size: 12px;
   text-align: center;
   padding: 10px 2px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: $message-color;
+}
+
+.product__image-step4 {
+  background-image: url(../img/rum.svg);
+  width: 200px;
+}
+
+.product__image-transition {
+  background-image: url(../img/map.svg);
+  margin: 0;
+  background-size: cover;
+  width: 100%;
+}
+
+.product__image-step5 {
+  background-image: url(../img/forest-1.svg);
+  height: 105px;
+  width: 140px;
+  float: right;
+}
+
+.product__image-step6 {
+  background-image: url(../img/excavator.svg);
+  height: 123px;
+  margin: 0 5 5 5;
+  width: 140px;
+}
+
+.product__image-step7_1 {
+  background-image: url(../img/forest-1.svg);
+}
+
+.product__image-step7_2 {
+  background-image: url(../img/forest-2.svg);
+}
+
+.product__image-step7_3 {
+  background-image: url(../img/forest-3.svg);
+}
+
+.product__image-step7_4 {
+  background-image: url(../img/forest-4.svg);
+}
+
+.product__image-step7_5 {
+  background-image: url(../img/forest-5.svg);
+}
+
+.product__text {
+  font-size: 18px;
+}
+
+.product__text_special {
+  font-size: 15px;
+}
+
+.product__text_special-2 {
+  float: right;
+  margin: 0;
+}
+
+.product__illustration {
+  margin: 10px 0;
+
+  &::before,
+  &::after {
+    content: ' ';
+    display: table;
+    clear: both;
+  }
+}
+
+.product__subtitle_special-2 {
+  color: $special-color;
+  font-weight: bold;
+}
+
+.product__subtitle_special-3 {
+  color: $icon-color;
+}
+
+.product__title {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.product__text_dark {
+  color: $special-color-2;
+}
+
+.product__text_motto {
+  font-style: italic;
+}
+
+.product__image_dark {
+  background-image: url(../img/cow-skull.svg);
+}
+
+.product__image_dark-2 {
+  background-image: url(../img/drop.svg);
+  width: 20px;
+  height: 25px;
+}
+
+.product__image_dark-3 {
+  background-image: url(../img/blood-lake.svg);
+  height: 22px;
+}
+
+.product__animation-step-3 {
+  height: 300px;
+  width: 150px;
+  margin: auto;
+}
+
+.product__animation-step-3-1 {
+  height: 150px;
+  background-image: url(../img/factory-pipe.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.product__animation-step-3-2 {
+  transform: scale(2);
+  transform-origin: 50% 0;
+  transition: all 0.3s;
+}
+
+.nolink {
+  text-decoration: none;
 }

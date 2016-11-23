@@ -1,6 +1,6 @@
 # GreenSpot
 
-Version 0.3.0
+Version 1.0.0
 
 # Installation
 
@@ -12,15 +12,19 @@ git checkout develop
 npm install
 ```
 
-Then, if you have Gulp installed globally:
+Then, to make production build:
 ```sh
+gulp modernizr
+gulp build
+```
+
+Or development mode with live reload:
+```sh
+gulp modernizr
 gulp
 ```
 
-And if you haven't:
-```sh
-npm run gulp
-```
+If you haven't installed Gulp globally, use `npm run gulp` instead of `gulp`.
 
 # Contributing
 

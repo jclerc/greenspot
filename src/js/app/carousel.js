@@ -3,12 +3,13 @@ class Carousel {
 
   constructor(target) {
 
-    var $target = $(target).eq(0);
-    var _this = this;
+    const $target = $(target).eq(0);
+    const _this = this;
 
     this.elements = {
       container: $target,
       slides: $target.find('.carousel__slides'),
+      arrows: $target.find('.carousel__arrows'),
       items: $target.find('.carousel__item'),
     };
 
@@ -16,6 +17,18 @@ class Carousel {
 
     this.elements.items.on('click', function (e) {
       _this.goto($(this).index());
+      e.preventDefault();
+    });
+
+    let arrows = this.elements.arrows;
+
+    arrows.find('.carousel__arrow_left').on('click', function (e) {
+      _this.prev();
+      e.preventDefault();
+    });
+
+    arrows.find('.carousel__arrow_right').on('click', function (e) {
+      _this.next();
       e.preventDefault();
     });
 
@@ -49,7 +62,7 @@ class Carousel {
     if (index < 0 || index >= this.count) {
       throw new Error('Index ' + index + ' is out of bounds');
     } else if (index !== this.index) {
-      var width = this.elements.slides.width();
+      const width = this.elements.slides.width();
       this.elements.slides.css('transform', 'translateX(' + -width * index + 'px)');
       this.elements.items.removeClass('carousel__item_active');
       this.elements.items.eq(index).addClass('carousel__item_active');
