@@ -22,8 +22,6 @@ class Carousel {
 
     let arrows = this.elements.arrows;
 
-    console.log(arrows);
-
     arrows.find('.carousel__arrow_left').on('click', function (e) {
       _this.prev();
       e.preventDefault();
