@@ -64,7 +64,8 @@
 
 .product__image-step2 {
   background-image: url(../img/cookie_slice.svg);
-  width: 250px;
+  width: 100%;
+  background-size: cover;
 }
 
 .product__image-anim {
@@ -223,13 +224,16 @@
 
 .product__image-transition {
   background-image: url(../img/map.svg);
-  width: 320px;
+  margin: 0;
+  background-size: cover;
+  width: 100%;
 }
 
 .product__image-step5 {
   background-image: url(../img/palmier.svg);
-  right: 0;
-  position: absolute;
+  width: 86px;
+  height: 100px;
+  float: right;
 }
 
 .product__image-step6 {
@@ -263,8 +267,6 @@
 }
 
 .product__text_special {
-  width: 220px;
-  position: absolute;
   font-size: 12px;
 }
 
@@ -274,8 +276,8 @@
 }
 
 .product__illustration {
-  width: 250px;
-  height: 200px;
+  width: 100%;
+  position: relative;
 }
 
 .product__subtitle_special-2 {
