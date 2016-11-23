@@ -1,6 +1,6 @@
 # GreenSpot
 
-Version 0.3.0
+Version 1.0.0
 
 # Installation
 
