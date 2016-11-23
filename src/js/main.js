@@ -7,9 +7,9 @@ var App = ($ => {
   // Router
   App.router = new Grapnel();
 
-  let $currentPage = null;
+  let $currentPage = $('.page_home');
   let $currentStep = null;
-  let pageId = null;
+  let pageId = 'home';
   let stepId = 0;
 
   // Show a page
