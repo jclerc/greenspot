@@ -5,6 +5,41 @@
   height: 100%;
   padding: 0 70px;
   overflow: hidden;
+
+  @include screen-sm {
+    padding: 30px 90px;
+  }
+}
+
+.carousel__arrows {
+  display: none;
+
+  @include screen-sm {
+    display: block;
+  }
+}
+
+.carousel__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: calc(50% - 200px);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40px;
+}
+
+.carousel__arrow_left {
+  left: 40px;
+  background-image: url(/img/icons/touch.svg);
+  background-position: left;
+}
+
+.carousel__arrow_right {
+  right: 40px;
+  background-image: url(/img/icons/touch.svg);
+  background-position: right;
 }
 
 .carousel__slides {
@@ -28,15 +63,15 @@
 }
 
 .carousel__item_1 {
-  background-image: url(../img/cookie.svg);   
+  background-image: url(../img/cookie.svg);
 }
 
 .carousel__item_2 {
-  background-image: url(../img/smartphone.svg);   
+  background-image: url(../img/smartphone.svg);
 }
 
 .carousel__item_3 {
-  background-image: url(../img/jean.svg);   
+  background-image: url(../img/jean.svg);
 }
 
 .carousel__item_4 {
