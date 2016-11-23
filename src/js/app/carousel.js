@@ -9,6 +9,7 @@ class Carousel {
     this.elements = {
       container: $target,
       slides: $target.find('.carousel__slides'),
+      arrows: $target.find('.carousel__arrows'),
       items: $target.find('.carousel__item'),
     };
 
@@ -16,6 +17,20 @@ class Carousel {
 
     this.elements.items.on('click', function (e) {
       _this.goto($(this).index());
+      e.preventDefault();
+    });
+
+    let arrows = this.elements.arrows;
+
+    console.log(arrows);
+
+    arrows.find('.carousel__arrow_left').on('click', function (e) {
+      _this.prev();
+      e.preventDefault();
+    });
+
+    arrows.find('.carousel__arrow_right').on('click', function (e) {
+      _this.next();
       e.preventDefault();
     });
 
