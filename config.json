@@ -25,7 +25,7 @@
     },
     "style": {
       "src": [
-        "src/scss/*.scss"
+        "src/scss/**/*.scss"
       ],
       "dest": "dist/css/"
     },
@@ -43,7 +43,7 @@
     },
     "fonts": {
       "src": [
-        "src/fonts/*"
+        "src/fonts/**/*"
       ],
       "dest": "dist/fonts/"
     }
