@@ -232,16 +232,17 @@
 }
 
 .product__image-step5 {
-  background-image: url(../img/palmier.svg);
-  width: 86px;
-  height: 100px;
+  background-image: url(../img/forest-1.svg);
+  height: 105px;
+  width: 140px;
   float: right;
 }
 
 .product__image-step6 {
-  background-image: url(../img/forest.svg);
-  left: 0;
-  position: absolute;
+  background-image: url(../img/excavator.svg);
+  height: 123px;
+  margin: 0 5 5 5;
+  width: 140px;
 }
 
 .product__image-step7_1 {
@@ -269,12 +270,13 @@
 }
 
 .product__text_special {
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .product__text_special-2 {
-  right: 0;
+  float: right;
   width: 150px;
+  margin: 0;
 }
 
 .product__illustration {
@@ -291,17 +293,6 @@
   font-weight: 400;
   font-size: 20px;
   font-family: 'Open Sans', sans-serif;
-}
-
-.product__image-step6 {
-  background-image: url(../img/forest-1.svg);
-  width: 86px;
-  height: 100px;
-  float: left;
-}
-
-.product__text_special-2 {
-  float: right;
 }
 
 .product__text_dark {
