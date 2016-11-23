@@ -8,7 +8,7 @@ var App = ($ => {
   App.router = new Grapnel();
 
   // Listener
-  App.router.on('navigate', function () {
+  App.router.on('navigate', (function listener() {
 
     // Re-add class at every load
     setTimeout(_ => {
@@ -27,7 +27,9 @@ var App = ($ => {
 
     }, 1);
 
-  });
+    return this;
+
+  })());
 
   // State
   let $currentPage = $('.page_home');
