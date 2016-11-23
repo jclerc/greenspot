@@ -10,7 +10,13 @@ App.ready($ => {
   });
 
   $('[data-goto="item"]').on('click', e => {
-    App.router.navigate('/item-' + (carousel.index + 1));
+    var $item = $('.carousel__item_' + (carousel.index + 1));
+    if ($item.data('enabled')) {
+      App.router.navigate('/item-' + (carousel.index + 1));
+    } else {
+      alert('L\'objet n\'est pas encore disponible !');
+    }
+
     e.preventDefault();
   });
 
