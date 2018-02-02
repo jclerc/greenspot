@@ -1,0 +1,351 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GreenSpot</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navigation">
+        <div class="navigation__item navigation__item_hidden navigation__item_left navigation__item_icon">
+          <div class="icon icon_responsive icon_back"></div>
+        </div>
+        <div class="navigation__item navigation__item_middle" data-goto="home">
+          <a href="#" data-goto="home" class="navigation__link">
+            <img src="img/logo.png" alt="GreenSpot" class="navigation__logo">
+          </a>
+        </div>
+        <div class="navigation__item navigation__item_right navigation__item_icon">
+          <a class="icon icon_responsive icon_info" href="http://www.greenpeace.org/france/fr/" target="_blank"></a>
+        </div>
+      </nav>
+    </header>
+    <section class="content">
+      <div class="page page_home">
+        <div class="video video_fullpage">
+          <video src="media/video-home.mp4" class="video__source" autoplay muted loop></video>
+        </div>
+        <div class="page__top">
+          <h1 class="heading heading_lg">
+            <span class="heading__first">Repensons</span> <span class="heading__highlight"> Notre </span> <span class="heading__last"> Consommation </span>
+          </h1>
+        </div>
+        <div class="page__bottom">
+          <h3 class="title title_sm">
+            Site optimisé pour mobile !
+          </h3>
+          <div data-goto="menu" class="button button_responsive button_area">
+            <span class="button__text">Commencer l'expérience</span>
+          </div>
+        </div>
+      </div>
+      <div class="page page_menu page_hidden">
+        <div class="menu">
+          <div class="menu__top">
+            <h2 class="title">Hello !</h2>
+            <p class="subtitle">
+              Commencez l'expérience en appuyant sur <span class="page_menu_subtitle_highlight">découvrir</span>.
+            </p>
+            <img class="page_menu_touch_icon" src="img/icons/touch.svg" alt="">
+          </div>
+          <div class="menu__items">
+            <div class="carousel">
+              <div class="carousel__slides">
+                <div data-enabled="true" class="carousel__item carousel__item_1 carousel__item_active"></div>
+                <div data-enabled="true" class="carousel__item carousel__item_2"></div>
+                <div class="carousel__item carousel__item_3"></div>
+                <div class="carousel__item carousel__item_4"></div>
+              </div>
+              <div class="carousel__arrows">
+                <div class="carousel__arrow carousel__arrow_left"></div>
+                <div class="carousel__arrow carousel__arrow_right"></div>
+              </div>
+            </div>
+          </div>
+          <div class="menu__bottom">
+            <div class="button button_area button_responsive" data-goto="item">
+              <img src="img/icons/locked-padlock.svg" alt="" class="button__icon">
+              <span class="button__text">Découvrir</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page page_item page_item-1 page_hidden">
+        <div class="step step-1 step_hidden">
+          <div class="product">
+            <h1 class="product__title">Les Cookies</h1>
+            <div class="product__image"></div>
+            <div class="product__subtitle">
+              <span class="product__subtitle_highlight">34.5M</span>
+              <p class="product__subtitle_classic">
+              cookies vendus <br> par jour
+              </p>
+            </div>
+            <p class="product__text">Les cookies sont l’une des sucreries préférées des occidentaux. Ils sont consommés aussi bien au goûter qu’au petit déjeuner. Le cookie est ancrée dans les moeurs depuis 200 ans.</p>
+            <h1 class="product__title">Composition</h1>
+            <p class="product__text">Malgré cela les cookies renferment parfois des produits gras et très sucrés parmi lesquel l’on peut trouver de l’huile de palme.</p>
+            <p class="product__text">Un grand nombre de marques de cookies très populaires utilisent de l’huile de palme dans leurs produits</p>
+            <div class="product__image product__image-step2"></div>
+            <p class="product__text">On en retrouve également dans beaucoup de produit du quotidien : cosmétique, biscuits apéritifs, pâtes à tartiner...</p>
+            <p class="product__text">Cette huile est rîche en matières grasses et peut provoquer des problèmes cardiovasculaires.
+            Mais ce sont ses conséquences sur l’environnement qui sont les plus impactantes.</p>
+            <p class="product__subtitle_special">Cassez le cookie pour continuer</p>
+            <div class="product__image" data-animation="cookie" data-then="item-1/step-2"></div>
+          </div>
+        </div>
+        <div class="step step-2 step_hidden">
+          <div class="product">
+            <h1 class="product__title">Les Cookies</h1>
+            <p class="product__text">L'huile de palme est présente dans <span class="product__subtitle_highlight">47%</span> des aliments industriels vendus actuellement</p>
+            <div class="product__image product__image-step4"></div>
+            <p class="product__text"><span class="product__subtitle_highlight">120</span> palmiers sont nécessaires à la production d'huile de palme</p>
+            <p class="product__text"><span class="product__subtitle_highlight">380</span> litres d'eau sont nécessaires à la production d'huile de palme</p>
+            <div class="product__image product__image-transition"></div>
+            <div class="product__illustration">
+              <div class="product__image product__image-step5"></div>
+              <p class="product__text product__text_special">La production d’huile de palme se fait majoritairement en Indonésie, (51% de la production mondiale) et en Malaisie (36%).
+              Cette huile est tant prisée par les industriels car elle se trouve être la moins chère à produire parmi toutes les huiles végétales. La demande en huile de palme est en hausse constante de 2,5% par an</p>
+            </div>
+            <div class="product__illustration">
+              <p class="product__text product__text_special product__text_special-2">Il faut planter de nombreux palmiers à huile pour subvenir à cette demande.Pour libérer l’espace nécessaire à ces cultures, les forêts sont détruites</p>
+              <div class="product__image product__image-step6"></div>
+            </div>
+            <p class="product__text">1 million d’hectares de forêt sont décimés chaque année en Malaisie. 12 millions d’hectares sont actuellement occupés.</p>
+            <p class="product__subtitle_special product__subtitle_special-2">Rasez la forêt pour continuer</p>
+            <div class="product__image product__image-step7_1" data-animation="forest" data-then="item-1/step-3"></div>
+          </div>
+        </div>
+        <div class="step step-3 step_hidden">
+          <div class="product">
+            <h1 class="title__product">Les Cookies</h1>
+            <p class="product__text product__text_dark">Cette déforestation a de nombreuses conséquences dévastarices sur l’atmosphère. Chaque arbre coupé renvoie une grande quantité de CO2 dans l’air.</p>
+            <div class="product__image product__image_dark"></div>
+            <div class="product__image product__image_dark-2"></div>
+            <div class="product__image product__image_dark-3"></div>
+            <p class="product__text">Cette déforestation massive entraîne la disparition de nombreuses espèces, chassées de leur habitat naturel. Ainsi de nombreux rhinocéros, tigres, ou Orang-Outans sont délogés. De plus, les arbres décimés ne peuvent assurer leur fonction d’assainisseur de l’athmosphère, participant alors à la pollution et au réchauffement de la planète.
+            </p>
+            <p class="product__text product__text_motto">Ensemble, arrêtons l'huile de palme !</p>
+            <div data-goto="item-1/step-4" class="button button_responsive button_area button_dark">
+              <span class="button__text">Je veux agir !</span>
+            </div>
+            <div data-goto="item-2" class="button button_responsive button_area">
+              <span class="button__text">Objet suivant</span>
+            </div>
+          </div>
+        </div>
+        <div class="step step-4 step_hidden">
+          <div class="product">
+            <h1 class="product__title">Les Cookies - Agir</h1>
+            <p class="product__text">L'histoire n'est pas obligée de s'arrêter là. Ensemble, nous pouvons réduire notre consommation d'huile de palme.
+            </p>
+            <p class="product__text">Au quotidien, pensons à vérifier la composition des denrées que nous achetons. Si le produit contient de l’huile de palme ou des « matières grasses végétales », alors il fait partie du problème. Achetons plutôt des produits équitables et respectueux de l’environnement.</p>
+            <a href="https://act.greenpeace.org/ea-action/action?ea.client.id=1849&ea.campaign.id=41388" class="nolink">
+              <div class="button button_responsive button__area">
+                <img src="img/icons/sheet.svg" alt="" class="button__icon">
+                <span class="button__text">Signez la pétition</span>
+              </div>
+            </a>
+            <a href="https://www.facebook.com/HuileDePalmeNon/" class="nolink">
+              <div class="button button_responsive button__area button_space">
+                <img src="img/icons/thumb-up.svg" alt="" class="button__icon">
+                <span class="button__text">Rejoignez nous</span>
+              </div>
+            </a>
+          </div>
+          <section class="page__bottom page__bottom-1">
+            <p class="product__subtitle_special">Restez informé de nos actions</p>
+            <p class="product__subtitle_special">Suivez nous sur les réseaux sociaux</p>
+            <div class="test">
+                <img src="img/icons/facebook.svg" alt="" class="icon icon__responsive icon__social icon__social-1">
+                <img src="img/icons/twitter.svg" alt="" class="icon icon__responsive icon__social icon__social-2">
+                <img src="img/icons/youtube.svg" alt="" class="icon icon__responsive icon__social icon__social-3">
+                <img src="img/icons/instagram.svg" alt="" class="icon icon__responsive icon__social icon__social-4">
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="page page_item page_item-2 page_hidden">
+        <div class="step step-1">
+          <div class="product product-2">
+            <h1 class="product__title">Le Smartphone</h1>
+            <div class="animation__item-2" data-animation="phone3d" data-then="item-2/step-2">
+              <div class="product__image product__image-anim product__image-3"></div>
+              <div class="product__image product__image-anim product__image-2"></div>
+              <div class="product__image product__image-anim product__image-1"></div>
+            </div>
+          </div>
+          <div class="chat">
+            <div class="chat-content" data-animation="chat-content">
+                  <div class="message">
+                   <div class="message__bubble message__bubble_user">
+                     <p class="message__text">
+                      Pourrais-je avoir quelques informations sur les téléphones ?
+                     </p>
+                   </div>
+                 </div>
+                 <div class="message">
+                   <div class="message__bubble message__bubble_computer">
+                     <p class="message__text">
+                      Bien sur mon ami, les ventes de smartphones ont augmentées de 14,4% en 2014-2015.
+                     </p>
+                   </div>
+                 </div>
+                 <div class="message">
+                   <div class="message__bubble message__bubble_computer">
+                     <p class="message__text">
+                      Le nombre d’utilisateurs est en hausse permanente… On assiste une centralisation du secteur par quelques entreprises.
+                     </p>
+                   </div>
+                 </div>
+                 <div class="message">
+                   <div class="message__bubble message__bubble_computer">
+                     <p class="message__text">
+                      Le coût de production moyen est d'environ 70% moins cher que le prix de vente.
+                     </p>
+                   </div>
+                 </div>
+                 <div class="message">
+                   <div class="message__bubble message__bubble_user">
+                     <p class="message__text">
+                      Fascinant !!
+                     </p>
+                   </div>
+                 </div>
+                 <div class="message">
+                   <div class="message__bubble message__bubble_computer">
+                     <p class="message__text">
+                      L'industrie engrenge 32 Milliards d’euros par an et n'a aucune transparence.
+                     </p>
+                   </div>
+                 </div>
+                 <div class="message">
+                   <div class="message__bubble message__bubble_computer">
+                     <p class="message__text">
+                      1,7 Milliards de smartphones seront vendus en 2020 si la consommation garde sa cadence.
+                     </p>
+                   </div>
+                 </div>
+                 <div class="message">
+                   <div class="message__bubble message__bubble_computer">
+                     <p class="message__text">
+                      70% des français possèdent un smartphone.
+                     </p>
+                   </div>
+                 </div>
+                 <div class="message">
+                   <div class="message__bubble message__bubble_computer">
+                     <p class="message__text">
+                      Selon toi, combien de millions de smartphones ont été vendus dans le monde en 2015 ?
+                     </p>
+                   </div>
+                 </div>
+                 <div class="message message_hidden" data-animation="chat-reply">
+                   <div class="message__bubble message__bubble_user">
+                     <p class="message__text"></p>
+                   </div>
+                 </div>
+                 <div class="message message_hidden" data-animation="chat-answer-wrong">
+                   <div class="message__bubble message__bubble_computer">
+                     <p class="message__text">
+                      Et non, raté! En 2015, 1400 millions de smartphones ont été vendus dans le monde. Retire la coque du téléphone en swipant pour continuer l’aventure.
+                     </p>
+                   </div>
+                 </div>
+                 <div class="message message_hidden" data-animation="chat-answer-correct">
+                   <div class="message__bubble message__bubble_computer">
+                     <p class="message__text">
+                      Bravo ! Retire la coque du téléphone en swipant pour continuer l’aventure.
+                     </p>
+                   </div>
+                 </div>
+               </div>
+               <form class="message__bottom" data-animation="chat-controls" data-answer="1400">
+                 <input type="text" class="message__answer" placeholder="Message" maxlength="50">
+                 <div class="message__button">
+                   <button type="submit" class="message__button__text">Envoyer</button>
+                 </div>
+               </form>
+             </div>
+          </div>
+          <div class="step step-2">
+            <div class="product">
+              <div class="animation__item-2" data-class-onload="animation__item-2_view3d">
+                <div class="product__image product__image-anim product__image-3"></div>
+                <div class="product__image product__image-anim product__image-2"></div>
+                <div class="product__image product__image-anim product__image-1"></div>
+              </div>
+              <div class="product__title test">Les batteries de smartphones</div>
+              <p class="product__text">
+                Sont composées de lithium-ion. Le lithium est le métal le plus léger, doté d’une très grande densité énergétique. Il est présent majoritairement dans les eaux marines.
+                Le lithium est principalement produit en Bolivie (9 millions de tonnes et au Chili 7,5 millions de tonnes).
+              </p>
+            </div>
+            <div class="page__bottom">
+              <div data-goto="item-2/step-3" class="button button_responsive button_area">
+                <span class="button__text">Etape suivante</span>
+              </div>
+            </div>
+          </div>
+          <div class="step step-3">
+            <div class="product">
+              <p class="product__subtitle_special">Cliquez pour créer des téléphones</p>
+              <div class="product__counter">
+                <div class="product__counter-image-4"></div>
+                <p class="product__counter-text" data-animation="counter">000</p>
+              </div>
+              <div class="product__animation-step-3" data-animation="factory">
+                <div class="product__animation-step-3-1"></div>
+                <img src="img/lake.svg" class="product__animation-step-3-2">
+              </div>
+              <p class="product__subtitle_special product__subtitle_special-2"><span class="product__subtitle_special-3">La production de téléphone</span><span class="product__subtitle_special-4"> nécessite beaucoup d'eau</span></p>
+            </div>
+            <div class="page__bottom">
+              <div data-goto="item-2/step-4" class="button button_responsive button_area">
+                <span class="button__text">J'ai compris !</span>
+              </div>
+            </div>
+          </div>
+          <div class="step step-4">
+            <div class="product">
+            <h1 class="product__title">Le Smartphone - Agir</h1>
+            <p class="product__text">L’histoire n’est pas obligée de s’arrêter là. Ensemble, nous pouvons réduire notre consommation de lithium, et cela commence par un meilleur recyclage de nos objets connectés.
+            </p>
+            <p class="product__text">Au quotidien, pensons à recycler nos anciennes batteries en supermarché, magasins et grandes surfaces. Jetons nos  produits encombrants dans les emplacements adaptés (déchetteries).</p>
+            <a href="http://www.recupyl.fr/91-recyclage-des-accumulateurs-lithium-ion.html" class="nolink">
+              <div class="button button_responsive button__area">
+                <img src="img/icons/sheet.svg" alt="" class="button__icon">
+                <span class="button__text">Signez la pétition</span>
+              </div>
+            </a>
+            <div class="button button_responsive button__area button_space" data-goto="item">
+              <img src="img/icons/thumb-up.svg" alt="" class="button__icon">
+              <span class="button__text">Rejoignez nous</span>
+            </div>
+          </div>
+          <section class="page__bottom page__bottom-1">
+            <p class="product__subtitle_special">Restez informé de nos actions</p>
+            <p class="product__subtitle_special">Suivez nous sur les réseaux sociaux</p>
+            <div class="test">
+                <img src="img/icons/facebook.svg" alt="" class="icon icon__responsive icon__social icon__social-1">
+                <img src="img/icons/twitter.svg" alt="" class="icon icon__responsive icon__social icon__social-2">
+                <img src="img/icons/youtube.svg" alt="" class="icon icon__responsive icon__social icon__social-3">
+                <img src="img/icons/instagram.svg" alt="" class="icon icon__responsive icon__social icon__social-4">
+            </div>
+          </section>
+        </div>
+        </div>
+      </div>
+      <div class="page page_item page_item-3 page_hidden">
+        <h1>Third Item</h1>
+      </div>
+      <div class="navigation-bar navigation-bar_hidden">
+          <div class="navigation-bar__overlay"></div>
+          <div class="navigation-bar__progress"></div>
+      </div>
+    </section>
+    <script src="js/app.js"></script>
+  </body>
+</html>
